@@ -1,1 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=MedievalSharp&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --color-button: #1C7800;
+  --color-button-50: #EFFFE2;
+  --color-body: #FAFAFA;
+  --color-platform: #000000;
+  --font-display: Inter, "sans-serif";
+  --font-inter: Inter, "sans-serif";
+  --font-mid:  MedievalSharp, "cursive";
+  --font-sf:  Rubik, "sans-serif";
+}
+
+@keyframes hero-float {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.02);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes beam-wave {
+  0% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(-12px);
+    opacity: 0.85;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+}
+
+@keyframes earth-orbit {
+  0% {
+    transform: translateX(-10px) scale(1);
+  }
+  50% {
+    transform: translateX(10px) scale(1.03);
+  }
+  100% {
+    transform: translateX(-10px) scale(1);
+  }
+}
+
+@keyframes page-fade {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes soft-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(28, 120, 0, 0.0);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px 0 rgba(28, 120, 0, 0.35);
+  }
+}
+
+@utility animate-hero-float {
+  animation: hero-float 8s ease-in-out infinite;
+}
+
+@utility animate-beam-wave {
+  animation: beam-wave 6s ease-in-out infinite alternate;
+}
+
+@utility animate-earth-orbit {
+  animation: earth-orbit 20s ease-in-out infinite alternate;
+}
+
+@utility animate-page-fade {
+  animation: page-fade 600ms ease-out;
+}
+
+@utility animate-soft-pulse {
+  animation: soft-pulse 4s ease-in-out infinite;
+}

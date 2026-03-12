@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/header/Header';
 import Herosection from './components/heroSection/Herosection';
 import Principles from './components/principlesSection/Principles';
+import Team from './components/team/Team';
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       {/* Hero Section */}
      <Herosection/>
      <Principles/>
+     <Team/>
 
   
     </div>

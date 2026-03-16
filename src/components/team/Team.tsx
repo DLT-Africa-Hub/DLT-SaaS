@@ -1,7 +1,9 @@
 
-import React, { useState } from 'react'
-import { Badge } from '../ui/Badge'
-import {X, Facebook, Github, Linkedin} from 'lucide-react'
+import { useState } from 'react'
+import { SectionHeader } from '../ui/SectionHeader'
+import { ScrollReveal } from '../common/ScrollReveal'
+import { FaXTwitter, FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa6";
+
 
 
 const Team = () => {
@@ -71,15 +73,12 @@ const Team = () => {
 
     ]
   return (
-    <section className='py-[119px] h-auto flex flex-col items-center gap-[95px] bg-linear-to-t from-[#34de002f] from-0% to-platform font-sf'>
-       <div className='flex flex-col items-center gap-[15px] max-w-[520px]'>
-       <Badge>Our Team</Badge>
-
-       <div className='flex flex-col items-center gap-[20px] text-center'>
-            <p className='text-[56px] font-medium text-[#FAFAFAFA]'>Meet the team</p>
-            <p className='text-[18px] font-normal text-[#FAFAFABF]'>Principles that guide our work and ensure the best outcomes for our clients</p>
-       </div>
-       </div>
+    <ScrollReveal className='py-[119px] h-auto flex flex-col items-center gap-[95px] bg-linear-to-t from-[#34de002f] from-0% to-platform font-sf'>
+       <SectionHeader
+        badgeText="Our Team"
+        title="Meet the team"
+        subtitle="Principles that guide our work and ensure the best outcomes for our clients"
+      />
        <div className='flex items-center gap-[29px]'>
         {/* left */}
         <div className='group relative h-[869px] w-[376px] overflow-hidden rounded-[500px] border-2 border-[#5e5e5e] font-sf'>
@@ -91,16 +90,16 @@ const Team = () => {
                 </div>
                 <div className='flex gap-[15px]  text-[#FAFAFABF]'>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={team[0].socials.twitter} >
-                        <X size={35}/>
+                        <FaXTwitter size={35}/>
                     </a>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={team[0].socials.facebook}>
-                        <Facebook size={35}/>
+                        <FaFacebook size={35}/>
                     </a>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={team[0].socials.github}>
-                        <Github size={35}/>
+                        <FaGithub size={35}/>
                     </a>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={team[0].socials.linkedin}>
-                        <Linkedin size={35}/>
+                        <FaLinkedin size={35}/>
                     </a>
                     
                 </div>
@@ -131,16 +130,16 @@ const Team = () => {
                 </div>
                 <div className='flex gap-[15px]  text-[#FAFAFABF]'>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={team[1].socials.twitter} >
-                        <X size={35}/>
+                        <FaXTwitter size={35}/>
                     </a>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={team[1].socials.facebook}>
-                        <Facebook size={35}/>
+                        <FaFacebook size={35}/>
                     </a>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={team[1].socials.github}>
-                        <Github size={35}/>
+                        <FaGithub size={35}/>
                     </a>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={team[1].socials.linkedin}>
-                        <Linkedin size={35}/>
+                        <FaLinkedin size={35}/>
                     </a>
                     
                 </div>
@@ -167,16 +166,16 @@ const Team = () => {
                 </div>
                 <div className='flex gap-[15px]  text-[#FAFAFABF]'>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={team[2].socials.twitter} >
-                        <X size={35}/>
+                        < FaXTwitter size={35}/>
                     </a>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={team[2].socials.facebook}>
-                        <Facebook size={35}/>
+                        <FaFacebook size={35}/>
                     </a>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={team[2].socials.github}>
-                        <Github size={35}/>
+                        <FaGithub size={35}/>
                     </a>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={team[2].socials.linkedin}>
-                        <Linkedin size={35}/>
+                        <FaLinkedin size={35}/>
                     </a>
                     
                 </div>
@@ -208,16 +207,16 @@ const Team = () => {
                 </div>
                 <div className='flex gap-[15px]  text-[#FAFAFABF]'>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={team[3].socials.twitter} >
-                        <X size={35}/>
+                        <FaXTwitter size={35}/>
                     </a>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={team[3].socials.facebook}>
-                        <Facebook size={35}/>
+                        <FaFacebook size={35}/>
                     </a>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={team[3].socials.github}>
-                        <Github size={35}/>
+                        <FaGithub size={35}/>
                     </a>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={team[3].socials.linkedin}>
-                        <Linkedin size={35}/>
+                        <FaLinkedin size={35}/>
                     </a>
                     
                 </div>
@@ -245,16 +244,16 @@ const Team = () => {
                 </div>
                 <div className='flex gap-[15px]  text-[#FAFAFABF]'>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={team[4].socials.twitter} >
-                        <X size={35}/>
+                        <FaXTwitter size={35}/>
                     </a>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={team[4].socials.facebook}>
-                        <Facebook size={35}/>
+                        <FaFacebook size={35}/>
                     </a>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={team[4].socials.github}>
-                        <Github size={35}/>
+                        <FaGithub size={35}/>
                     </a>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={team[4].socials.linkedin}>
-                        <Linkedin size={35}/>
+                        <FaLinkedin size={35}/>
                     </a>
                     
                 </div>
@@ -268,7 +267,7 @@ const Team = () => {
 
 
 
-    </section>
+    </ScrollReveal>
   )
 }
 

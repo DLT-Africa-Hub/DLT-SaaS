@@ -78,7 +78,7 @@ const Herosection = () => {
             </div>
           ))}
         </div>
-        <p className="text-[18px] font-normal cursor-pointer text-[#2AC500]">
+        <p className="text-[18px] font-normal cursor-pointer bg-[#FFFFFF1A] p-2 rounded-2xl text-[#2AC500] backdrop-blur-md border border-white/10 shadow-lg  ">
           view more
         </p>
       </div>

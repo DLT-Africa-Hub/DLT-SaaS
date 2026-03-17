@@ -39,7 +39,7 @@ const Principles = () => {
         
     ]
   return (
-    <ScrollReveal className='min-h-screen flex flex-col items-start py-[150px] gap-[75px] px-[70px] relative '>
+    <ScrollReveal className='min-h-screen w-full flex flex-col items-start py-[150px] gap-[75px] px-[70px] relative '>
         <div className='w-full flex flex-col gap-[15px]  max-w-[673px] font-sf'>
             <Badge className=''>Our Principles</Badge>
             <div className='flex flex-col gap-[20px]'>
@@ -47,7 +47,7 @@ const Principles = () => {
             <p className='text-[#FAFAFABF] font-normal text-[18px]'>Principles that guide our work and ensure the best outcomes for our clients</p>
             </div>
         </div>
-        <div className='grid grid-cols-3 w-full gap-y-[37px]'>
+        <div className='grid grid-cols-3  w-full gap-x-[130px] gap-y-[37px] '>
             {cardDetails.map((cardDetail) => (
                 <div
                     key={cardDetail.title}

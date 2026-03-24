@@ -5,9 +5,13 @@ import type {IconType} from "react-icons"
 import { SlCallOut } from "react-icons/sl";
 import { PiEnvelopeSimpleThin } from "react-icons/pi";
 import { IoLocationOutline } from "react-icons/io5";
+import type {MeetProps} from  "../../types/meet"
 
 
-const Footer = () => {
+
+
+
+const Footer = ({openModal}:MeetProps) => {
     interface iSocial {
         icon: IconType;
         link: string
@@ -48,7 +52,7 @@ const Footer = () => {
                 <p className="font-normal text-[18px] text-[#FAFAFABF]">Comprehensive tech stack for all your digital needs</p>
 
             </div>
-            <Button variant="secondary">Book a meet</Button>
+            <Button variant="secondary" onClick={() => openModal(true)}>Book a meet</Button>
         </div>
 
         <div className="absolute w-[426px] h-[938px] bg-[#FFFFFF66] top-[-374px] left-[-269px]  rotate-67 blur-3xl"/>

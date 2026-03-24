@@ -1,8 +1,11 @@
 import React from "react";
 import { Button } from "../ui/Button";
 import { ScrollReveal } from "../common/ScrollReveal";
+import type {MeetProps} from  "../../types/meet"
 
-const Herosection = () => {
+
+
+const Herosection = ({openModal}:MeetProps) => {
   const beams = [
     {
       height: "80%",
@@ -57,6 +60,7 @@ const Herosection = () => {
           Gorem ipsum dolor sit amet, dipiscing elit.
         </p>
         <Button
+        onClick={() => openModal(true)}
           variant="secondary"
           className="font-normal text-[18px] animate-soft-pulse"
         >

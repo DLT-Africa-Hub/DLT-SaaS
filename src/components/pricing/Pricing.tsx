@@ -66,7 +66,7 @@ const Pricing = () => {
 
                         </div>
                         <div className='h-px w-full bg-linear-to-r from-button  via-[#1c78008d] to-[#1c780049] flex items-center justify-between'>
-                                {dashes.map((dash) => (
+                                {dashes.map(() => (
                                     <div className='h-px w-[6px] bg-platform'></div>
                                 ))}
                         </div>

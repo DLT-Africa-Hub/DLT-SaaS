@@ -5,7 +5,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed w-full px-6 pt-6 text-body md:px-[70px] md:pt-[40px] z-100">
+    <header className="fixed bg-platform  w-full px-5 pb-[10px] pt-[37px] text-body md:px-[70px] md:pb-0 md:pt-[40px] z-100">
       <div className="relative flex items-center justify-between">
         {/* logo */}
         <img src="/logo.png" alt="logo" className="h-8 w-auto md:h-10" />
@@ -25,12 +25,12 @@ const Header = () => {
         {/* mobile menu button */}
         <button
           type="button"
-          className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#FFFFFF1A] backdrop-blur-md border border-white/10 shadow-lg md:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-full backdrop-blur-md  md:hidden"
           onClick={() => setIsOpen((prev) => !prev)}
           aria-label="Toggle navigation"
         >
-          <span className="block h-[2px] w-5 bg-body transition-transform data-[open=true]:translate-y-[3px] data-[open=true]:rotate-45" data-open={isOpen} />
-          <span className="mt-[5px] block h-[2px] w-5 bg-body transition-transform data-[open=true]:-translate-y-[3px] data-[open=true]:-rotate-45" data-open={isOpen} />
+          <span className="block h-[2px] w-5 bg-green-800 transition-transform data-[open=true]:translate-y-[3px] data-[open=true]:rotate-45" data-open={isOpen} />
+          <span className="mt-[5px] block h-[2px] w-5 bg-green-800  transition-transform data-[open=true]:-translate-y-[3px] data-[open=true]:-rotate-45" data-open={isOpen} />
         </button>
       </div>
 

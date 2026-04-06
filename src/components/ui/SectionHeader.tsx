@@ -31,15 +31,15 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
       : "text-left";
 
   return (
-    <div className={`flex flex-col gap-[15px] ${containerAlign} ${className}`}>
+    <div className={`flex flex-col gap-[10px] md:gap-[15px] ${containerAlign} ${className}`}>
       {badgeText && <Badge>{badgeText}</Badge>}
 
-      <div className={`flex flex-col gap-[20px] ${containerAlign} ${textAlign}`}>
-        <p className={`text-[56px] font-medium text-[#FAFAFAFA] ${textAlign}`}>
+      <div className={`flex flex-col gap-[15px] md:gap-[20px] ${containerAlign} ${textAlign}`}>
+        <p className={`text-[32px] md:text-[56px] font-medium text-[#FAFAFAFA] ${textAlign}`}>
           {title}
         </p>
         {subtitle && (
-          <p className={`text-[18px] font-normal text-[#FAFAFABF] ${textAlign}`}>
+          <p className={`text-[16px] md:text-[18px] font-normal text-[#FAFAFABF] ${textAlign}`}>
             {subtitle}
           </p>
         )}

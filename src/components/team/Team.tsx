@@ -73,13 +73,24 @@ const Team = () => {
 
     ]
   return (
-    <ScrollReveal className='py-[119px] h-auto flex flex-col items-center gap-[95px] bg-linear-to-t from-[#34de002f] from-0% to-platform font-sf'>
+    <ScrollReveal className='md:py-[119px]  py-[86px] h-auto flex flex-col items-center gap-[95px] bg-linear-to-t from-[#34de002f] from-0% to-platform font-sf'>
        <SectionHeader
         badgeText="Our Team"
         title="Meet the team"
         subtitle="Principles that guide our work and ensure the best outcomes for our clients"
+        align='left'
+        className='md:hidden px-[20px]'
+        
       />
-       <div className='flex items-center gap-[29px]'>
+       <SectionHeader
+        badgeText="Our Team"
+        title="Meet the team"
+        subtitle="Principles that guide our work and ensure the best outcomes for our clients"
+       
+        className='hidden md:flex'
+        
+      />
+       <div className='hidden md:flex items-center gap-[29px]'>
         {/* left */}
         <div className='group relative h-[869px] w-[376px] overflow-hidden rounded-[500px] border-2 border-[#5e5e5e] font-sf'>
             <img src={team[0].photo} className='h-full w-full rounded-[500px] object-cover' alt={team[0].name} />
@@ -262,6 +273,38 @@ const Team = () => {
         </div>
 
         </div>
+       </div>
+
+       <div className='px-[20px] w-full flex gap-[30px] flex-col items-center  md:hidden'>
+          {team.map((member) => (
+            <div className='relative w-full h-[419px]'>
+                 <img src={member.photo} className='h-full w-full rounded-[50px]  mobileFit object-cover' alt={team[1].name} />
+                <div className='absolute  bottom-0 pl-[27px] pb-[35px] rounded-b-[50px] w-full bg-linear-to-t from-black/20 from-90%  flex flex-col items-start gap-[15px] '>
+              
+                <div className='flex flex-col items-start gap-[5px]'>
+                <p className='font-semibold text-[28px] text-body'>{member.name}</p>
+                <p className='text-[18px] font-normal text-[#FAFAFABF]'>{member.position}</p>
+                </div>
+                <div className='flex gap-[15px]  text-[#FAFAFABF]'>
+                    <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={member.socials.twitter} >
+                        <FaXTwitter size={35}/>
+                    </a>
+                    <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={member.socials.facebook}>
+                        <FaFacebook size={35}/>
+                    </a>
+                    <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={member.socials.github}>
+                        <FaGithub size={35}/>
+                    </a>
+                    <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={member.socials.linkedin}>
+                        <FaLinkedin size={35}/>
+                    </a>
+                    
+                </div>
+            
+                </div>
+            </div>
+          ))}
+
        </div>
 
 

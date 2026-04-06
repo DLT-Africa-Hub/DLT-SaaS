@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { ScrollReveal } from '../common/ScrollReveal'
 import { SectionHeader } from '../ui/SectionHeader'
 import { SlGlobeAlt } from "react-icons/sl";
@@ -39,7 +39,7 @@ const Pricing = () => {
 
 
   return (
-    <ScrollReveal className='pt-[150px] pb-[50px]  flex flex-col items-center gap-[85px] font-sf' direction="up">
+    <ScrollReveal className='pt-[86px] md:pt-[150px] pb-[50px]  flex flex-col items-center gap-[85px] font-sf' direction="up">
           <SectionHeader
         badgeText="Our Pricing"
         title="Check out our Pricing"
@@ -48,9 +48,9 @@ const Pricing = () => {
         align='center'
       />
 
-      <div className='flex items-center gap-[35px] h-[666px] '>
+      <div className='flex flex-col md:flex-row items-center gap-[35px] md:h-[666px] px-5'>
             {pricings.map((pricing)=>(
-                <div className='h-full w-[423px] px-[30px] py-[50px] border border-[#1C780080] rounded-[30px] flex flex-col items-start justify-between'>
+                <div className='h-full w-full md:w-[423px] px-[30px] py-[50px] border border-[#1C780080] rounded-[30px] flex flex-col items-start gap-[81px] justify-between'>
 
                     <div className='flex flex-col items-center gap-[46px] w-full '>
 
@@ -59,8 +59,8 @@ const Pricing = () => {
                                     <SlGlobeAlt size={35}/>
                             </div>
                             <div className='flex flex-col items-start gap-[10px]'>
-                                <p className='font-semibold text-[32px] text-body'>{pricing.title}</p>
-                                <p className='font-normal text-[18px] text-[#FAFAFABF]'>{pricing.text}</p>
+                                <p className='font-semibold text-[26px] md:text-[32px] text-body'>{pricing.title}</p>
+                                <p className='font-normal text-[16px] md:text-[18px] text-[#FAFAFABF]'>{pricing.text}</p>
 
                             </div>
 
@@ -74,15 +74,15 @@ const Pricing = () => {
                     </div>
 
                     <div className='w-full flex flex-col items-start gap-5 '>
-                        <div className='w-full flex items-center justify-between font-normal text-[18px] text-[#FAFAFABF]'>
+                        <div className='w-full flex items-center justify-between font-normal text-[16px] md:text-[18px] text-[#FAFAFABF]'>
                             <p>Tech Lead</p>
                             <p>${pricing.costs.techLead}</p>
                         </div>
-                        <div className='w-full flex items-center justify-between font-normal text-[18px] text-[#FAFAFABF]'>
+                        <div className='w-full flex items-center justify-between font-normal text-[16px] md:text-[18px] text-[#FAFAFABF]'>
                             <p>Product</p>
                             <p>${pricing.costs.product}</p>
                         </div>
-                        <div className='w-full flex items-center justify-between font-normal text-[18px] text-[#FAFAFABF]'>
+                        <div className='w-full flex items-center justify-between font-normal text-[16px] md:text-[18px] text-[#FAFAFABF]'>
                             <p>Marketing</p>
                             <p>${pricing.costs.marketing}</p>
                         </div>

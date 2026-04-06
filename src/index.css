@@ -87,6 +87,10 @@
   animation: earth-orbit 20s ease-in-out infinite alternate;
 }
 
+.mobileFit{
+  object-position: 80% 20%;
+}
+
 @utility animate-page-fade {
   animation: page-fade 600ms ease-out;
 }

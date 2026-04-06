@@ -39,19 +39,19 @@ const Principles = () => {
         
     ]
   return (
-    <ScrollReveal className='min-h-screen w-full flex flex-col items-start py-[150px] gap-[75px] px-[70px] relative '>
-        <div className='w-full flex flex-col gap-[15px]  max-w-[673px] font-sf'>
-            <Badge className=''>Our Principles</Badge>
+    <ScrollReveal className='min-h-screen w-full flex flex-col items-start py-[86px] md:py-[150px] gap-[75px] px-[20px] md:px-[70px] relative '>
+        <div className='w-full flex flex-col gap-[15px] font-sf'>
+            <Badge className='w-[150px]'>Our Principles</Badge>
             <div className='flex flex-col gap-[20px]'>
-            <p className='font-medium text-[56px] text-[#FAFAFAFA]'>Gorem ipsum dolor sit amet, dipiscing elit.</p>
-            <p className='text-[#FAFAFABF] font-normal text-[18px]'>Principles that guide our work and ensure the best outcomes for our clients</p>
+            <p className='font-medium text-[32px] md:text-[56px] text-[#FAFAFAFA]'>Gorem ipsum dolor sit amet, dipiscing elit.</p>
+            <p className='text-[#FAFAFABF] font-normal text-[14px] md:text-[18px]'>Principles that guide our work and ensure the best outcomes for our clients</p>
             </div>
         </div>
-        <div className='grid grid-cols-3  w-full gap-x-[130px] gap-y-[37px] '>
+        <div className='flex flex-col md:grid md:grid-cols-3  w-full md:gap-x-[130px] md:gap-y-[37px] gap-y-[25px] '>
             {cardDetails.map((cardDetail) => (
                 <div
                     key={cardDetail.title}
-                    className={`relative overflow-hidden w-[486px] flex flex-col items-start gap-[46px] p-[30px] h-[240px] border border-[#5E5E5E] rounded-[20px] bg-gradient-to-tr from-[#000000] from-40% ${
+                    className={`relative overflow-hidden w-full max-w-[486px] flex flex-col items-start gap-[46px] p-[30px] h-[240px] border border-[#5E5E5E] rounded-[20px] bg-gradient-to-tr from-[#000000] from-40% ${
                         cardDetail.color === "green" ? "to-[#3df50077]" : "to-[#ffa851a5]"
                     }`}
                 >

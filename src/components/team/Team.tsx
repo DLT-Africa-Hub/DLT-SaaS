@@ -93,7 +93,7 @@ const Team = () => {
        <div className='hidden md:flex items-center gap-[29px]'>
         {/* left */}
         <div className='group relative h-[869px] w-[376px] overflow-hidden rounded-[500px] border-2 border-[#5e5e5e] font-sf'>
-            <img src={team[0].photo} className='h-full w-full rounded-[500px] object-cover' alt={team[0].name} />
+            <img loading='lazy' src={team[0].photo} className='h-full w-full rounded-[500px] object-cover' alt={team[0].name} />
             <div className='pointer-events-none absolute inset-x-0 bottom-40 bg-black/10 px-[27px] py-8 flex flex-col items-start gap-[20px] opacity-0 -translate-x-6 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:translate-x-0'>
                 <div className='flex flex-col items-start gap-[10px]'>
                 <p className='font-semibold text-[32px] text-body'>{team[0].name}</p>
@@ -133,7 +133,7 @@ const Team = () => {
           onMouseEnter={() => setHoveredTall("top")}
           onMouseLeave={() => setHoveredTall(null)}
         >
-            <img src={team[1].photo} className='h-full w-full rounded-[500px] object-cover' alt={team[1].name} />
+            <img loading='lazy' src={team[1].photo} className='h-full w-full rounded-[500px] object-cover' alt={team[1].name} />
             <div className='pointer-events-none absolute inset-x-0 bottom-40 bg-black/20 px-[27px] py-4 flex flex-col items-start gap-[12px] opacity-0 -translate-x-6 transition-all duration-500 ease-out delay-200 group-hover:opacity-100 group-hover:translate-x-0 group-hover:delay-200'>
                 <div className='flex flex-col items-start gap-[10px]'>
                 <p className='font-semibold text-[32px] text-body'>{team[1].name}</p>
@@ -169,7 +169,7 @@ const Team = () => {
           onMouseEnter={() => setHoveredTall("bottom")}
           onMouseLeave={() => setHoveredTall(null)}
         >
-            <img src={team[2].photo} className='h-full w-full rounded-[500px] object-cover' alt={team[2].name} />
+            <img loading='lazy' src={team[2].photo} className='h-full w-full rounded-[500px] object-cover' alt={team[2].name} />
             <div className='pointer-events-none absolute inset-x-0 bottom-40 bg-black/20 px-[27px] py-4 flex flex-col items-start gap-[12px] opacity-0 -translate-x-6 transition-all duration-500 ease-out delay-200 group-hover:opacity-100 group-hover:translate-x-0 group-hover:delay-200'>
                 <div className='flex flex-col items-start gap-[10px]'>
                 <p className='font-semibold text-[32px] text-body'>{team[2].name}</p>
@@ -210,7 +210,7 @@ const Team = () => {
           onMouseEnter={() => setHoveredRight("bottom")}
           onMouseLeave={() => setHoveredRight(null)}
         >
-            <img src={team[3].photo} className='h-full w-full rounded-[500px] object-cover' alt={team[3].name} />
+            <img loading='lazy' src={team[3].photo} className='h-full w-full rounded-[500px] object-cover' alt={team[3].name} />
             <div className='pointer-events-none absolute inset-x-0 bottom-40 bg-black/20 px-[27px] py-4 flex flex-col items-start gap-[12px] opacity-0 -translate-x-6 transition-all duration-500 ease-out delay-200 group-hover:opacity-100 group-hover:translate-x-0 group-hover:delay-200'>
                 <div className='flex flex-col items-start gap-[10px]'>
                 <p className='font-semibold text-[32px] text-body'>{team[3].name}</p>
@@ -247,7 +247,7 @@ const Team = () => {
           onMouseEnter={() => setHoveredRight("top")}
           onMouseLeave={() => setHoveredRight(null)}
         >
-            <img src={team[4].photo} className='h-full w-full rounded-[500px] object-cover' alt={team[4].name} />
+            <img loading='lazy' src={team[4].photo} className='h-full w-full rounded-[500px] object-cover' alt={team[4].name} />
             <div className='pointer-events-none absolute inset-x-0 bottom-40 bg-black/20 px-[27px] py-4 flex flex-col items-start gap-[12px] opacity-0 -translate-x-6 transition-all duration-500 ease-out delay-200 group-hover:opacity-100 group-hover:translate-x-0 group-hover:delay-200'>
                 <div className='flex flex-col items-start gap-[10px]'>
                 <p className='font-semibold text-[32px] text-body'>{team[4].name}</p>
@@ -278,7 +278,7 @@ const Team = () => {
        <div className='px-[20px] w-full flex gap-[30px] flex-col items-center  md:hidden'>
           {team.map((member) => (
             <div className='relative w-full h-[419px]'>
-                 <img src={member.photo} className='h-full w-full rounded-[50px]  mobileFit object-cover' alt={team[1].name} />
+                 <img src={member.photo} className='h-full w-full rounded-[50px]   mobileFit object-cover' alt={member.name} loading='lazy' />
                 <div className='absolute  bottom-0 pl-[27px] pb-[35px] rounded-b-[50px] w-full bg-linear-to-t from-black/20 from-90%  flex flex-col items-start gap-[15px] '>
               
                 <div className='flex flex-col items-start gap-[5px]'>

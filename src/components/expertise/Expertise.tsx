@@ -62,7 +62,7 @@ const Expertise = () => {
 
         </div>
         <div className='hidden md:block w-[623px] h-[545px] rounded-[20px]'>
-            <img src="rectangle.png" alt="" className='h-full w-full object-cover' />
+            <img loading="lazy" src="rectangle.png" alt="" className='h-full w-full object-cover' />
         </div>
 
       </div>

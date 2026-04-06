@@ -66,6 +66,7 @@ const Testimonial = () => {
               <div className="flex flex-col items-start gap-[13px] w-full">
                 <div className="w-[65px] h-[65px] rounded-full border border-[#5E5E5E] text-green-600 flex items-center justify-center">
                   <img
+                    loading="lazy"
                     src={test.logo}
                     alt=""
                     className="h-full w-full object-cover rounded-full"
@@ -100,6 +101,7 @@ const Testimonial = () => {
               <div className="flex flex-col items-start gap-[13px] w-full">
                 <div className="w-[65px] h-[65px] rounded-full border border-[#5E5E5E] text-green-600 flex items-center justify-center">
                   <img
+                  loading="lazy"
                     src={test.logo}
                     alt=""
                     className="h-full w-full object-cover rounded-full"

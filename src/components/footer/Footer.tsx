@@ -56,7 +56,7 @@ const Footer = ({openModal}:MeetProps) => {
 
         <div className="absolute w-[426px] h-[938px] bg-[#FFFFFF66] top-[-374px] left-[-269px]  rotate-67 blur-3xl"/>
         <div className="absolute w-[426px] h-[938px] bg-[#ffffff86] top-[-242px] left-[1250px]  rotate-22 blur-3xl"/>
-        <img src="dlt.png" alt="dlt" className="absolute bottom-[-100px] right-[-50px] w-[571px] h-[571px]" />
+        <img loading="lazy" src="dlt.png" alt="dlt" className="absolute bottom-[-100px] right-[-50px] w-[571px] h-[571px]" />
         <svg className="absolute inset-0 w-full h-full opacity-20 z-100 pointer-events-none rounded-[50px]">
           <filter id="noise">
             <feTurbulence
@@ -73,7 +73,7 @@ const Footer = ({openModal}:MeetProps) => {
 
       <div className="w-full flex items-start justify-between   ">
         <div className="w-full flex flex-col items-start gap-[10px]">
-            <img src="dltMonoWhite.png" alt="DLTHub" />
+            <img loading="lazy" src="dltMonoWhite.png" alt="DLTHub" />
             <div className="flex items-center gap-[15px]">
                 {socials.map((social) => (
                     <a href={social.link}>

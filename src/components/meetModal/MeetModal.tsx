@@ -4,6 +4,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { InlineWidget } from "react-calendly";
 import { FaGoogle, FaVideo } from "react-icons/fa";
 import React from "react";
+import { Button } from "../ui/Button";
+
 
 Modal.setAppElement("#root");
 
@@ -37,7 +39,7 @@ export default function MeetModal({ isOpen, onClose }: PlatformModalProps) {
           <>
             {/* Overlay */}
             <motion.div
-              className="fixed inset-0 bg-black/50"
+              className="fixed inset-0 bg-black/50 "
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -50,11 +52,11 @@ export default function MeetModal({ isOpen, onClose }: PlatformModalProps) {
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.9, opacity: 0, y: 40 }}
               transition={{ duration: 0.25, ease: "easeOut" }}
-              className="relative bg-white rounded-2xl shadow-xl w-full max-w-2xl mx-4 p-6 z-50"
+              className="relative bg-[#FFFFFF1A]  font-sf text-base backdrop-blur-md border border-white/10 rounded-2xl shadow-xl w-full max-w-2xl md:mx-4 p-6 z-50"
             >
               {!selectedPlatform ? (
                 <>
-                  <h2 className="text-xl font-semibold mb-4 text-black">
+                  <h2 className="text-xl font-semibold mb-4 text-white">
                     Choose Meeting Platform
                   </h2>
 
@@ -62,7 +64,7 @@ export default function MeetModal({ isOpen, onClose }: PlatformModalProps) {
                     {/* Google Meet */}
                     <button
                       onClick={() => setSelectedPlatform("meet")}
-                      className="w-full flex items-center gap-3 p-4 rounded-xl border border-gray-200 hover:border-[var(--color-button)] hover:bg-[var(--color-button-50)] transition"
+                      className="w-full flex items-center gap-3 text-white p-4 rounded-xl border border-gray-200 hover:border-[var(--color-button)] hover:bg-[var(--color-button-50)] transition"
                     >
                       <FaGoogle className="text-green-600 text-xl" />
                       <span className="font-medium">Google Meet</span>
@@ -71,42 +73,42 @@ export default function MeetModal({ isOpen, onClose }: PlatformModalProps) {
                     {/* Zoom */}
                     <button
                       onClick={() => setSelectedPlatform("zoom")}
-                      className="w-full flex items-center gap-3 p-4 rounded-xl border border-gray-200 hover:border-[var(--color-button)] hover:bg-[var(--color-button-50)] transition"
+                      className="w-full flex items-center gap-3 p-4 text-white rounded-xl border border-gray-200 hover:border-[var(--color-button)] hover:bg-[var(--color-button-50)] transition"
                     >
                       <FaVideo className="text-blue-500 text-xl" />
                       <span className="font-medium">Zoom</span>
                     </button>
                   </div>
 
-                  <button
+                  <Button
                     onClick={onClose}
                     className="mt-6 w-full py-2 rounded-lg bg-black text-white hover:opacity-90"
                   >
                     Cancel
-                  </button>
+                  </Button>
                 </>
               ) : (
-                <>
+                <div className="pt-[150px] md:pt-0 ">
                   {/* Calendly Embed */}
-                  <div className="mb-4 flex justify-between items-center">
-                    <h2 className="text-xl font-semibold text-black">
+                  <div className="mb-4 flex flex-col justify-start md:justify-between items-start gap-1.5">
+                    <h2 className="text-xl font-semibold text-white">
                       Schedule {selectedPlatform === "meet" ? "Google Meet" : "Zoom"} Call
                     </h2>
-                    <button
+                    <Button
                       onClick={handleBack}
-                      className="text-gray-500 hover:text-black font-medium"
+                      className="text-white  font-medium"
                     >
                       Back
-                    </button>
+                    </Button>
                   </div>
 
-                  <div className="h-[600px]">
+                  <div className="h-[600px] w-full max-w-[400px]">
                     <InlineWidget
                       url={calendlyUrls[selectedPlatform]}
-                      styles={{ height: "100%" }}
+                      styles={{ height: "100%", width: "100%"}}
                     />
                   </div>
-                </>
+                </div>
               )}
             </motion.div>
           </>

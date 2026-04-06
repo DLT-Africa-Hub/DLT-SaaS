@@ -1,4 +1,3 @@
-import React from "react";
 import { ScrollReveal } from "../common/ScrollReveal";
 import { SectionHeader } from "../ui/SectionHeader";
 

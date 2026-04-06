@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { ScrollReveal } from '../common/ScrollReveal'
 import { Badge } from '../ui/Badge'
 import {Link} from 'lucide-react'

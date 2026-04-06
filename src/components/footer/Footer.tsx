@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "../ui/Button";
 import { FaXTwitter, FaLinkedin, FaGithub, FaFacebook, FaInstagram } from "react-icons/fa6";
 import type {IconType} from "react-icons"

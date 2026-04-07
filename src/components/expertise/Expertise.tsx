@@ -55,7 +55,7 @@ const Expertise = () => {
 </div>
                         <div className=' flex flex-col w-full  gap-[5px] '>
                             <p className='font-semibold w-full text-[20px] md:text-[24px] text-body'>{exp.title}</p>
-                            <p className='font-normal text-[14px] md:text-[16px] text-[#FAFAFABF]'>{exp.text}</p>
+                            <p className='font-light text-[14px] md:text-[16px] text-[#FAFAFABF]'>{exp.text}</p>
                         </div>
                 </div>
             ))}

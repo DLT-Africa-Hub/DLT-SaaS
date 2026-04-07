@@ -56,13 +56,13 @@ const Herosection = ({openModal}:MeetProps) => {
         <h1 className="font-medium md:text-[56px] text-[40px]   text-body">
           Gorem ipsum dolor sit amet, dipiscing elit.
         </h1>
-        <p className="font-normal text-[14px] md:text-[18px] text-[#FAFAFABF]">
+        <p className="font-light text-[14px] md:text-[18px] text-[#FAFAFABF]">
           Gorem ipsum dolor sit amet, dipiscing elit.
         </p>
         <Button
         onClick={() => openModal(true)}
           variant="secondary"
-          className="font-normal text-[18px] animate-soft-pulse"
+          className="font-light text-[18px] animate-soft-pulse"
         >
           Book a meet
         </Button>
@@ -78,11 +78,11 @@ const Herosection = ({openModal}:MeetProps) => {
                 {stat.number}
                 {stat.title === "guarantee" ? "%" : "+"}
               </p>
-              <p className="md:text-[18px] text-[14px] font-normal">{stat.text}</p>
+              <p className="md:text-[18px] text-[14px] font-light">{stat.text}</p>
             </div>
           ))}
         </div>
-        <p className="hidden md:block text-[18px]  font-normal cursor-pointer bg-[#FFFFFF1A] p-2 rounded-2xl text-[#2AC500] backdrop-blur-md border border-white/10 shadow-lg  ">
+        <p className="hidden md:block text-[18px]  font-light cursor-pointer bg-[#FFFFFF1A] p-2 rounded-2xl text-[#2AC500] backdrop-blur-md border border-white/10 shadow-lg  ">
           view more
         </p>
       </div>

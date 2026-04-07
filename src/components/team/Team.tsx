@@ -283,7 +283,7 @@ const Team = () => {
               
                 <div className='flex flex-col items-start gap-[5px]'>
                 <p className='font-semibold text-[28px] text-body'>{member.name}</p>
-                <p className='text-[18px] font-normal text-[#FAFAFABF]'>{member.position}</p>
+                <p className='text-[18px] font-light text-[#FAFAFABF]'>{member.position}</p>
                 </div>
                 <div className='flex gap-[15px]  text-[#FAFAFABF]'>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={member.socials.twitter} >

@@ -48,7 +48,7 @@ const Footer = ({openModal}:MeetProps) => {
         <div className="flex flex-col items-start gap-[30px] z-10">
             <div className="flex flex-col items-start gap-[20px]">
                 <p className="font-meduim text-[56px] text-[#FAFAFAFA]">Want to contact us?</p>
-                <p className="font-normal text-[18px] text-[#FAFAFABF]">Comprehensive tech stack for all your digital needs</p>
+                <p className="font-light text-[18px] text-[#FAFAFABF]">Comprehensive tech stack for all your digital needs</p>
 
             </div>
             <Button variant="secondary" onClick={() => openModal(true)}>Book a meet</Button>
@@ -89,7 +89,7 @@ const Footer = ({openModal}:MeetProps) => {
             <div className="flex items-center justify-center">
             <IoLocationOutline  className="text-green-600  text-[20px]"/>
             </div>
-            <p className="font-normal text-[16px] text-[#FAFAFAD9] wrap-break-word">2, Sheikh Zakariyah Adebayo Yusuf Street, PEGAMUT, 102112, Ota, Ogun State</p>
+            <p className="font-light text-[16px] text-[#FAFAFAD9] wrap-break-word">2, Sheikh Zakariyah Adebayo Yusuf Street, PEGAMUT, 102112, Ota, Ogun State</p>
 
             </div>
 

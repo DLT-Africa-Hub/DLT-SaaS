@@ -44,7 +44,7 @@ const Principles = () => {
             <Badge className='w-[150px]'>Our Principles</Badge>
             <div className='flex flex-col gap-[20px]'>
             <p className='font-medium text-[32px] md:text-[56px] text-[#FAFAFAFA]'>Gorem ipsum dolor sit amet, dipiscing elit.</p>
-            <p className='text-[#FAFAFABF] font-normal text-[14px] md:text-[18px]'>Principles that guide our work and ensure the best outcomes for our clients</p>
+            <p className='text-[#FAFAFABF] font-thin text-[14px] md:text-[18px]'>Principles that guide our work and ensure the best outcomes for our clients</p>
             </div>
         </div>
         <div className='flex flex-col md:grid md:grid-cols-3  w-full md:gap-x-[130px] md:gap-y-[37px] gap-y-[25px] '>
@@ -60,7 +60,7 @@ const Principles = () => {
                     </div>
                  <div className='flex flex-col items-start gap-[20px] font-sf'>
                  <p className='font-bold text-[24px] text-[#FAFAFAFA]'>{cardDetail.title}</p>
-                 <p className='font-normal text-[18px] text-[#FAFAFABF]'>{cardDetail.text}</p>
+                 <p className='font-light text-[18px] text-[#FAFAFABF]'>{cardDetail.text}</p>
                  </div>
                  {/* <img src="cardGradiient.png" alt="" className='absolute  bg-black ' /> */}
                 </div>

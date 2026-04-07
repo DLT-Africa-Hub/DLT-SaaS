@@ -60,7 +60,7 @@ const Pricing = () => {
                             </div>
                             <div className='flex flex-col items-start gap-[10px]'>
                                 <p className='font-semibold text-[26px] md:text-[32px] text-body'>{pricing.title}</p>
-                                <p className='font-normal text-[16px] md:text-[18px] text-[#FAFAFABF]'>{pricing.text}</p>
+                                <p className='font-light text-[16px] md:text-[18px] text-[#FAFAFABF]'>{pricing.text}</p>
 
                             </div>
 
@@ -74,15 +74,15 @@ const Pricing = () => {
                     </div>
 
                     <div className='w-full flex flex-col items-start gap-5 '>
-                        <div className='w-full flex items-center justify-between font-normal text-[16px] md:text-[18px] text-[#FAFAFABF]'>
+                        <div className='w-full flex items-center justify-between font-light text-[16px] md:text-[18px] text-[#FAFAFABF]'>
                             <p>Tech Lead</p>
                             <p>${pricing.costs.techLead}</p>
                         </div>
-                        <div className='w-full flex items-center justify-between font-normal text-[16px] md:text-[18px] text-[#FAFAFABF]'>
+                        <div className='w-full flex items-center justify-between font-light text-[16px] md:text-[18px] text-[#FAFAFABF]'>
                             <p>Product</p>
                             <p>${pricing.costs.product}</p>
                         </div>
-                        <div className='w-full flex items-center justify-between font-normal text-[16px] md:text-[18px] text-[#FAFAFABF]'>
+                        <div className='w-full flex items-center justify-between font-light text-[16px] md:text-[18px] text-[#FAFAFABF]'>
                             <p>Marketing</p>
                             <p>${pricing.costs.marketing}</p>
                         </div>

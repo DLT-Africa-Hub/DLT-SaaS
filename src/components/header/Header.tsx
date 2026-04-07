@@ -5,7 +5,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed bg-platform  w-full px-5 pb-[10px] pt-[37px] text-body md:px-[70px] md:pb-0 md:pt-[40px] z-100">
+    <header className="fixed bg-platform md:bg-transparent  w-full px-5 pb-[10px] pt-[37px] text-body md:px-[70px] md:pb-0 md:pt-[40px] z-100">
       <div className="relative flex items-center justify-between">
         {/* logo */}
         <img src="/logo.png" alt="logo" className="h-8 w-auto md:h-10" />

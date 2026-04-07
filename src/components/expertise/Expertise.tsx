@@ -49,13 +49,13 @@ const Expertise = () => {
       <div className='px-5 md:px-0 md:flex md:flex-row items-center gap-[50px]'>
         <div className='w-full max-w-[519px] h-[545px] flex flex-col items-left justify-between'>
             {expertise.map((exp) => (
-                <div className='h-[119px] flex justify-start gap-[18px] md:gap-[23px] w-full rounded-r-[20px] py-5 px-[30px] border-l-2 border-green-600 bg-linear-to-r from-[#0F0F0F] from-70%  to-[#75757559] '>
-                        <div className='w-[24px] h-[24px] md:w-[44px] md:h-[44px]  rounded-full flex items-center justify-center border border-[#5E5E5E] text-green-600'>
-                            <exp.icon size={15}/>
-                        </div>
-                        <div className=' flex flex-col gap-[5px]'>
-                            <p className='font-semibold text-[20px] md:text-[24px] text-body'>{exp.title}</p>
-                            <p className='font-normal text-[16px] text-[#FAFAFABF]'>{exp.text}</p>
+                <div className='h-auto md:h-[119px] flex justify-start gap-[18px] md:gap-[23px] w-full rounded-r-[20px] py-5 pl-[30px] pr-[10px] border-l-2 border-green-600 bg-linear-to-r from-[#0F0F0F] from-70%  to-[#75757559] '>
+                       <div className=' w-[44px] h-[44px] shrink-0 rounded-full flex items-center justify-center border border-[#5E5E5E] text-green-600'>
+    <exp.icon className='w-6 h-6'/>
+</div>
+                        <div className=' flex flex-col w-full  gap-[5px] '>
+                            <p className='font-semibold w-full text-[20px] md:text-[24px] text-body'>{exp.title}</p>
+                            <p className='font-normal text-[14px] md:text-[16px] text-[#FAFAFABF]'>{exp.text}</p>
                         </div>
                 </div>
             ))}

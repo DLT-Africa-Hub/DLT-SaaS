@@ -42,8 +42,8 @@ const Footer = ({openModal}:MeetProps) => {
 
     ]
   return (
-    <footer className="h-screen bg-linear-to-t from-[#34de006a] flex items-center justify-center flex-col px-[70px] gap-[72px]  to-platform font-sf">
-      <div className="relative w-[80%] h-[485px] bg-[#196106] pt-[100px] px-[61px]  rounded-[50px] overflow-hidden ">
+    <footer className=" py-[86px] md:py-0 md:h-screen bg-linear-to-t from-[#34de006a] flex items-center justify-center flex-col px-5 md:px-[70px]  gap-[72px]  to-platform font-sf">
+      <div className="relative hidden md:block w-[80%] h-[485px] bg-[#196106] pt-[100px] px-[61px]  rounded-[50px] overflow-hidden ">
 
         <div className="flex flex-col items-start gap-[30px] z-10">
             <div className="flex flex-col items-start gap-[20px]">
@@ -71,7 +71,7 @@ const Footer = ({openModal}:MeetProps) => {
         </svg>
       </div>
 
-      <div className="w-full flex items-start justify-between   ">
+      <div className="w-full flex flex-col gap-[35px]  md:flex-row items-start justify-between   ">
         <div className="w-full flex flex-col items-start gap-[10px]">
             <img loading="lazy" src="dltMonoWhite.png" alt="DLTHub" />
             <div className="flex items-center gap-[15px]">

@@ -55,8 +55,8 @@ const Pricing = () => {
                     <div className='flex flex-col items-center gap-[46px] w-full '>
 
                         <div className='flex flex-col items-start gap-[20px] w-full'>
-                            <div className='w-[50px] h-[50px] rounded-full border border-[#5E5E5E] text-green-600 flex items-center justify-center'>
-                                    <SlGlobeAlt size={35}/>
+                            <div className='w-[44px] h-[44px] md:w-[50px] md:h-[50px] rounded-full border border-[#5E5E5E] text-green-600 flex items-center justify-center'>
+                            <SlGlobeAlt className="w-6 h-6 md:w-[35px] md:h-[35px]" />
                             </div>
                             <div className='flex flex-col items-start gap-[10px]'>
                                 <p className='font-semibold text-[26px] md:text-[32px] text-body'>{pricing.title}</p>

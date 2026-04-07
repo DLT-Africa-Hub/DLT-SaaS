@@ -106,6 +106,11 @@ export default function MeetModal({ isOpen, onClose }: PlatformModalProps) {
                     <InlineWidget
                       url={calendlyUrls[selectedPlatform]}
                       styles={{ height: "100%", width: "100%"}}
+                      pageSettings={{
+                        backgroundColor: "000000",
+                        primaryColor: "2AC500",
+                        textColor: "FAFAFA",
+                      }}
                     />
                   </div>
                 </div>

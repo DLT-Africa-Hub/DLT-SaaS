@@ -52,7 +52,7 @@ const Testimonial = () => {
   ];
 
   return (
-    <ScrollReveal className="py-[119px] h-auto flex flex-col items-center gap-[95px] font-sf">
+    <ScrollReveal className="py-[86px] md:py-[119px] h-auto flex flex-col items-center gap-[70px] md:gap-[95px] font-sf">
       <SectionHeader
         badgeText="Testimonials"
         title="What our clients has to say"
@@ -94,7 +94,7 @@ const Testimonial = () => {
           </div>
         ))}
       </div>
-      <div className="flex justify-center items-center gap-[67px] h-[398px] rotate-[15.71deg]">
+      <div className="hidden md:flex justify-center items-center gap-[67px] h-[398px] rotate-[15.71deg]">
         {testimonials.map((test) => (
           <div className="bg-platform h-full w-[423px] px-[30px] py-[50px] border border-[#1C780080] rounded-[30px] flex flex-col items-start justify-between">
             <div className="flex flex-col items-center gap-[46px] w-full ">

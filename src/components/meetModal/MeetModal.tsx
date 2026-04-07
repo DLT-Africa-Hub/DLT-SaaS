@@ -32,7 +32,7 @@ export default function MeetModal({ isOpen, onClose }: PlatformModalProps) {
       onRequestClose={onClose}
       shouldCloseOnOverlayClick={true}
       className="outline-none"
-      overlayClassName="fixed inset-0 z-50 flex items-center justify-center"
+      overlayClassName="fixed inset-0 z-50 flex items-center justify-center  pt-[150px]"
     >
       <AnimatePresence>
         {isOpen && (
@@ -88,7 +88,7 @@ export default function MeetModal({ isOpen, onClose }: PlatformModalProps) {
                   </Button>
                 </>
               ) : (
-                <div className="pt-[150px] md:pt-0 ">
+                <div className="">
                   {/* Calendly Embed */}
                   <div className="mb-4 flex flex-col justify-start md:justify-between items-start gap-1.5">
                     <h2 className="text-xl font-semibold text-white">

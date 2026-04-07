@@ -1,11 +1,37 @@
-import  { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Button } from "../ui/Button";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY < 10) {
+        setVisible(true);
+      } else if (currentScrollY > lastScrollY.current) {
+        setVisible(false);
+        setIsOpen(false);
+      } else {
+        setVisible(true);
+      }
+
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <header className="fixed bg-platform md:bg-transparent  w-full px-5 pb-[10px] pt-[37px] text-body md:px-[70px] md:pb-0 md:pt-[40px] z-100">
+    <header
+      className={`fixed bg-platform md:bg-transparent w-full px-5 pb-[10px] pt-[37px] text-body md:px-[70px] md:pb-0 md:pt-[40px] z-100 transition-transform duration-300 ${
+        visible ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
       <div className="relative flex items-center justify-between">
         {/* logo */}
         <img src="/logo.png" alt="logo" className="h-8 w-auto md:h-10" />
@@ -25,18 +51,18 @@ const Header = () => {
         {/* mobile menu button */}
         <button
           type="button"
-          className="inline-flex h-10 w-10 items-center justify-center rounded-full backdrop-blur-md  md:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-full backdrop-blur-md md:hidden"
           onClick={() => setIsOpen((prev) => !prev)}
           aria-label="Toggle navigation"
         >
           <span className="block h-[2px] w-5 bg-green-800 transition-transform data-[open=true]:translate-y-[3px] data-[open=true]:rotate-45" data-open={isOpen} />
-          <span className="mt-[5px] block h-[2px] w-5 bg-green-800  transition-transform data-[open=true]:-translate-y-[3px] data-[open=true]:-rotate-45" data-open={isOpen} />
+          <span className="mt-[5px] block h-[2px] w-5 bg-green-800 transition-transform data-[open=true]:-translate-y-[3px] data-[open=true]:-rotate-45" data-open={isOpen} />
         </button>
       </div>
 
       {/* mobile nav panel */}
       {isOpen && (
-        <div className="absolute  mt-3 flex w-[90%] flex-col gap-4 rounded-2xl bg-[#FFFFFF1A] p-4 font-sf text-base backdrop-blur-md border border-white/10 shadow-lg md:hidden">
+        <div className="absolute mt-3 flex w-[90%] flex-col gap-4 rounded-2xl bg-[#FFFFFF1A] p-4 font-sf text-base backdrop-blur-md border border-white/10 shadow-lg md:hidden">
           <nav className="flex flex-col gap-3">
             <a href="">Solutions</a>
             <a href="">Team</a>

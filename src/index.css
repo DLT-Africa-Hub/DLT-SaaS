@@ -10,7 +10,7 @@
   --font-display: Inter, "sans-serif";
   --font-inter: Inter, "sans-serif";
   --font-mid:  MedievalSharp, "cursive";
-  --font-sf:  Rubik, "sans-serif";
+  --font-sf:  Inter, "sans-serif";
 }
 
 @keyframes hero-float {

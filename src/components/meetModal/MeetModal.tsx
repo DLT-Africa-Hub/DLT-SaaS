@@ -64,7 +64,7 @@ export default function MeetModal({ isOpen, onClose }: PlatformModalProps) {
                     {/* Google Meet */}
                     <button
                       onClick={() => setSelectedPlatform("meet")}
-                      className="w-full flex items-center gap-3 text-white p-4 rounded-xl border border-gray-200 hover:border-[var(--color-button)] hover:bg-[var(--color-button-50)] transition"
+                      className="w-full flex items-center gap-3 text-white p-4 rounded-xl border border-gray-200 cursor-pointer hover:border-[var(--color-button)] hover:bg-[var(--color-button-100)] transition"
                     >
                       <FaGoogle className="text-green-600 text-xl" />
                       <span className="font-medium">Google Meet</span>
@@ -73,7 +73,7 @@ export default function MeetModal({ isOpen, onClose }: PlatformModalProps) {
                     {/* Zoom */}
                     <button
                       onClick={() => setSelectedPlatform("zoom")}
-                      className="w-full flex items-center gap-3 p-4 text-white rounded-xl border border-gray-200 hover:border-[var(--color-button)] hover:bg-[var(--color-button-50)] transition"
+                      className="w-full flex items-center gap-3 p-4 text-white rounded-xl border border-gray-200 cursor-pointer hover:border-[var(--color-button)] hover:bg-[var(--color-button-100)] transition"
                     >
                       <FaVideo className="text-blue-500 text-xl" />
                       <span className="font-medium">Zoom</span>

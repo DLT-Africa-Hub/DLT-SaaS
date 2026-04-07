@@ -47,91 +47,87 @@ const Testimonial = () => {
     },
   ];
 
-  const dashes = [
-    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-  ];
+  const dashes = Array.from({ length: 20 });
+
+  const TestimonialCard = ({ test }: { test: testimonial }) => (
+    <div className="bg-platform h-[398px] w-[423px] shrink-0 px-[30px] py-[50px] border border-[#1C780080] rounded-[30px] flex flex-col items-start justify-between">
+      <div className="flex flex-col items-center gap-[46px] w-full">
+        <div className="flex flex-col items-start gap-[13px] w-full">
+          <div className="w-[65px] h-[65px] rounded-full border border-[#5E5E5E] text-green-600 flex items-center justify-center">
+            <img
+              loading="lazy"
+              src={test.logo}
+              alt=""
+              className="h-full w-full object-cover rounded-full"
+            />
+          </div>
+          <div className="flex flex-col items-start gap-[7px]">
+            <p className="font-semibold text-[32px] text-body">{test.company}</p>
+            <p className="font-normal text-[18px] text-[#FAFAFABF]">{test.description}</p>
+          </div>
+        </div>
+        <div className="h-px w-full bg-linear-to-r from-button via-[#1c78008d] to-[#1c780049] flex items-center justify-between">
+          {dashes.map((_, i) => (
+            <div key={i} className="h-px w-[6px] bg-platform" />
+          ))}
+        </div>
+      </div>
+      <p className="font-normal text-[18px] text-[#FAFAFABF]">{test.testimonial}</p>
+    </div>
+  );
+
+  // Duplicate for seamless loop
+  const doubled = [...testimonials, ...testimonials];
 
   return (
-    <ScrollReveal className="py-[86px] md:py-[119px] h-auto flex flex-col items-center gap-[70px] md:gap-[95px] font-sf">
+    <ScrollReveal className="py-[86px] md:py-[119px] px-5 h-auto flex flex-col items-center gap-[70px] md:gap-[95px] font-sf">
       <SectionHeader
         badgeText="Testimonials"
         title="What our clients has to say"
       />
 
-      <div className="flex flex-col gap-[50px]">
-      <div className="flex justify-center items-center gap-[67px] h-[398px] rotate-[-9deg]">
-        {testimonials.map((test) => (
-          <div className="bg-platform h-full w-[423px] px-[30px] py-[50px] border border-[#1C780080] rounded-[30px] flex flex-col items-start justify-between">
-            <div className="flex flex-col items-center gap-[46px] w-full ">
-              <div className="flex flex-col items-start gap-[13px] w-full">
-                <div className="w-[65px] h-[65px] rounded-full border border-[#5E5E5E] text-green-600 flex items-center justify-center">
-                  <img
-                    loading="lazy"
-                    src={test.logo}
-                    alt=""
-                    className="h-full w-full object-cover rounded-full"
-                  />
-                </div>
-                <div className="flex flex-col items-start gap-[7px]">
-                  <p className="font-semibold text-[32px] text-body">
-                    {test.company}
-                  </p>
-                  <p className="font-normal text-[18px] text-[#FAFAFABF]">
-                    {test.description}
-                  </p>
-                </div>
-              </div>
-              <div className="h-px w-full bg-linear-to-r from-button  via-[#1c78008d] to-[#1c780049] flex items-center justify-between">
-                {dashes.map(() => (
-                  <div className="h-px w-[6px] bg-platform"></div>
-                ))}
-              </div>
-            </div>
+      <style>{`
+        @keyframes marquee-left {
+          0%   { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        @keyframes marquee-right {
+          0%   { transform: translateX(-50%); }
+          100% { transform: translateX(0); }
+        }
+        .marquee-left {
+          animation: marquee-left 30s linear infinite;
+        }
+        .marquee-right {
+          animation: marquee-right 30s linear infinite;
+        }
+        .marquee-left:hover,
+        .marquee-right:hover {
+          animation-play-state: paused;
+        }
+      `}</style>
 
-            <p className="font-normal text-[18px] text-[#FAFAFABF]">
-              {test.testimonial}
-            </p>
+      <div className="flex flex-col gap-[50px] w-full overflow-hidden">
+
+        {/* Row 1 — scrolls left, tilted */}
+        <div className="rotate-[-9deg] scale-105">
+          <div className="flex gap-[67px] marquee-left w-max">
+            {doubled.map((test, i) => (
+              <TestimonialCard key={i} test={test} />
+            ))}
           </div>
-        ))}
-      </div>
-      <div className="hidden md:flex justify-center items-center gap-[67px] h-[398px] rotate-[15.71deg]">
-        {testimonials.map((test) => (
-          <div className="bg-platform h-full w-[423px] px-[30px] py-[50px] border border-[#1C780080] rounded-[30px] flex flex-col items-start justify-between">
-            <div className="flex flex-col items-center gap-[46px] w-full ">
-              <div className="flex flex-col items-start gap-[13px] w-full">
-                <div className="w-[65px] h-[65px] rounded-full border border-[#5E5E5E] text-green-600 flex items-center justify-center">
-                  <img
-                  loading="lazy"
-                    src={test.logo}
-                    alt=""
-                    className="h-full w-full object-cover rounded-full"
-                  />
-                </div>
-                <div className="flex flex-col items-start gap-[7px]">
-                  <p className="font-semibold text-[32px] text-body">
-                    {test.company}
-                  </p>
-                  <p className="font-normal text-[18px] text-[#FAFAFABF]">
-                    {test.description}
-                  </p>
-                </div>
-              </div>
-              <div className="h-px w-full bg-linear-to-r from-button  via-[#1c78008d] to-[#1c780049] flex items-center justify-between">
-                {dashes.map(() => (
-                  <div className="h-px w-[6px] bg-platform"></div>
-                ))}
-              </div>
-            </div>
+        </div>
 
-            <p className="font-normal text-[18px] text-[#FAFAFABF]">
-              {test.testimonial}
-            </p>
+        {/* Row 2 — scrolls right, tilted (desktop only) */}
+        <div className="hidden md:block rotate-[15.71deg] scale-105">
+          <div className="flex gap-[67px] marquee-right w-max">
+            {doubled.map((test, i) => (
+              <TestimonialCard key={i} test={test} />
+            ))}
           </div>
-        ))}
-      </div>
-      </div>
+        </div>
 
-    
+      </div>
     </ScrollReveal>
   );
 };

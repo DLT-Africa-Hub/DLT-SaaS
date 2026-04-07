@@ -62,7 +62,7 @@ const Herosection = ({openModal}:MeetProps) => {
         <Button
         onClick={() => openModal(true)}
           variant="secondary"
-          className="font-light text-[18px] animate-soft-pulse"
+          className="font-light px-[25px] md:px-[40.5px] py-[10px] md:py-[22px] text-[16px]  md:text-[18px] animate-soft-pulse"
         >
           Book a meet
         </Button>

@@ -9,7 +9,7 @@ type ButtonProps = {
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 const baseClasses =
-  "inline-flex items-center justify-center  gap-[10px] rounded-[10px] px-[40.5px] py-[22px] text-sm font-medium transition-opacity transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-platform cursor-pointer";
+  "inline-flex items-center justify-center  gap-[10px] rounded-[10px] px-[40.5px] py-[22px] text-sm font-normal transition-opacity transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-platform cursor-pointer";
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary: "bg-button text-body hover:bg-button/90",

@@ -5,11 +5,12 @@ import { InlineWidget } from "react-calendly";
 import { FaGoogle, FaVideo } from "react-icons/fa";
 import React from "react";
 import { Button } from "../ui/Button";
+import meetModalData from "./meetModalData.json";
 
 
 Modal.setAppElement("#root");
 
-type Platform = "meet" | "zoom";
+type Platform = keyof typeof meetModalData.platforms;
 
 type PlatformModalProps = {
   isOpen: boolean;
@@ -22,8 +23,8 @@ export default function MeetModal({ isOpen, onClose }: PlatformModalProps) {
   const handleBack = () => setSelectedPlatform(null);
 
   const calendlyUrls: Record<Platform, string> = {
-    meet: "https://calendly.com/druidde/meet-call",
-    zoom: "https://calendly.com/druidde/zoom-call",
+    meet: meetModalData.platforms.meet.url,
+    zoom: meetModalData.platforms.zoom.url,
   };
 
   return (
@@ -57,7 +58,7 @@ export default function MeetModal({ isOpen, onClose }: PlatformModalProps) {
               {!selectedPlatform ? (
                 <>
                   <h2 className="text-xl font-semibold mb-4 text-white">
-                    Choose Meeting Platform
+                    {meetModalData.title}
                   </h2>
 
                   <div className="space-y-3">
@@ -67,7 +68,7 @@ export default function MeetModal({ isOpen, onClose }: PlatformModalProps) {
                       className="w-full flex items-center gap-3 text-white p-4 rounded-xl border border-gray-200 cursor-pointer hover:border-[var(--color-button)] hover:bg-[var(--color-button-100)] transition"
                     >
                       <FaGoogle className="text-green-600 text-xl" />
-                      <span className="font-medium">Google Meet</span>
+                      <span className="font-medium">{meetModalData.platforms.meet.label}</span>
                     </button>
 
                     {/* Zoom */}
@@ -76,7 +77,7 @@ export default function MeetModal({ isOpen, onClose }: PlatformModalProps) {
                       className="w-full flex items-center gap-3 p-4 text-white rounded-xl border border-gray-200 cursor-pointer hover:border-[var(--color-button)] hover:bg-[var(--color-button-100)] transition"
                     >
                       <FaVideo className="text-blue-500 text-xl" />
-                      <span className="font-medium">Zoom</span>
+                      <span className="font-medium">{meetModalData.platforms.zoom.label}</span>
                     </button>
                   </div>
 
@@ -84,7 +85,7 @@ export default function MeetModal({ isOpen, onClose }: PlatformModalProps) {
                     onClick={onClose}
                     className="mt-6 w-full py-2 rounded-lg bg-black text-white hover:opacity-90"
                   >
-                    Cancel
+                    {meetModalData.cancelText}
                   </Button>
                 </>
               ) : (
@@ -92,13 +93,13 @@ export default function MeetModal({ isOpen, onClose }: PlatformModalProps) {
                   {/* Calendly Embed */}
                   <div className="mb-4 flex flex-col justify-start md:justify-between items-start gap-1.5">
                     <h2 className="text-xl font-semibold text-white">
-                      Schedule {selectedPlatform === "meet" ? "Google Meet" : "Zoom"} Call
+                      {meetModalData.scheduleTitlePrefix} {meetModalData.platforms[selectedPlatform].label} Call
                     </h2>
                     <Button
                       onClick={handleBack}
                       className="text-white  font-medium"
                     >
-                      Back
+                      {meetModalData.backText}
                     </Button>
                   </div>
 

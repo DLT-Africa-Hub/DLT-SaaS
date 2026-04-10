@@ -2,54 +2,24 @@
 import { ScrollReveal } from '../common/ScrollReveal'
 import { SectionHeader } from '../ui/SectionHeader'
 import { SlGlobeAlt } from "react-icons/sl";
+import pricingData from "./pricingData.json"
 
 const Pricing = () => {
-
-    const pricings = [
-        {
-            title:"Hourly Rate",
-            text:"Borem ipsum dolor sit amet adipiscing elit.",
-            costs:{
-                techLead: 5000,
-                product:6000,
-                marketing:8000,
-            }
-        },
-        {
-            title:"Monthly Rate",
-            text:"Borem ipsum dolor sit amet adipiscing elit.",
-            costs:{
-                techLead: 5000,
-                product:6000,
-                marketing:8000,
-            }
-        },
-        {
-            title:"Yearly Rate",
-            text:"Borem ipsum dolor sit amet adipiscing elit.",
-            costs:{
-                techLead: 5000,
-                product:6000,
-                marketing:8000,
-            }
-        },
-    ]
-
     const dashes = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 
 
   return (
     <ScrollReveal className='pt-[86px] md:pt-[150px] pb-[50px]  flex flex-col items-center gap-[85px] font-sf' direction="up">
           <SectionHeader
-        badgeText="Our Pricing"
-        title="Check out our Pricing"
-        subtitle="Comprehensive tech stack for all your digital needs"
+        badgeText={pricingData.header.badgeText}
+        title={pricingData.header.title}
+        subtitle={pricingData.header.subtitle}
         className='w-[673px]'
         align='center'
       />
 
       <div className='flex flex-col md:flex-row items-center gap-[35px] md:h-[666px] px-5'>
-            {pricings.map((pricing)=>(
+            {pricingData.plans.map((pricing)=>(
                 <div className='h-full w-full md:w-[423px] px-[30px] py-[50px] border border-[#1C780080] rounded-[30px] flex flex-col items-start gap-[81px] justify-between'>
 
                     <div className='flex flex-col items-center gap-[46px] w-full '>
@@ -75,15 +45,15 @@ const Pricing = () => {
 
                     <div className='w-full flex flex-col items-start gap-5 '>
                         <div className='w-full flex items-center justify-between font-light text-[16px] md:text-[18px] text-[#FAFAFABF]'>
-                            <p>Tech Lead</p>
+                            <p>{pricingData.roleLabels.techLead}</p>
                             <p>${pricing.costs.techLead}</p>
                         </div>
                         <div className='w-full flex items-center justify-between font-light text-[16px] md:text-[18px] text-[#FAFAFABF]'>
-                            <p>Product</p>
+                            <p>{pricingData.roleLabels.product}</p>
                             <p>${pricing.costs.product}</p>
                         </div>
                         <div className='w-full flex items-center justify-between font-light text-[16px] md:text-[18px] text-[#FAFAFABF]'>
-                            <p>Marketing</p>
+                            <p>{pricingData.roleLabels.marketing}</p>
                             <p>${pricing.costs.marketing}</p>
                         </div>
                         

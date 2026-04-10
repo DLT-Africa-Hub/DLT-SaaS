@@ -1,5 +1,6 @@
 import { ScrollReveal } from "../common/ScrollReveal";
 import { SectionHeader } from "../ui/SectionHeader";
+import testimonialData from "./testimonialData.json";
 
 const Testimonial = () => {
   interface testimonial {
@@ -9,43 +10,7 @@ const Testimonial = () => {
     testimonial: string;
   }
 
-  const testimonials: testimonial[] = [
-    {
-      company: "Celo Dao Africa",
-      logo: "celo.jpg",
-      description: "Borem ipsum dolor sit amet adipiscing elit.",
-      testimonial:
-        "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-    },
-    {
-      company: "Celo Dao Africa",
-      logo: "celo.jpg",
-      description: "Borem ipsum dolor sit amet adipiscing elit.",
-      testimonial:
-        "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-    },
-    {
-      company: "Celo Dao Africa",
-      logo: "celo.jpg",
-      description: "Borem ipsum dolor sit amet adipiscing elit.",
-      testimonial:
-        "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-    },
-    {
-      company: "Celo Dao Africa",
-      logo: "celo.jpg",
-      description: "Borem ipsum dolor sit amet adipiscing elit.",
-      testimonial:
-        "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-    },
-    {
-      company: "Celo Dao Africa",
-      logo: "celo.jpg",
-      description: "Borem ipsum dolor sit amet adipiscing elit.",
-      testimonial:
-        "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
-    },
-  ];
+  const testimonials: testimonial[] = testimonialData.items;
 
   const dashes = Array.from({ length: 20 });
   const doubled = [...testimonials, ...testimonials];
@@ -80,8 +45,8 @@ const Testimonial = () => {
   return (
     <ScrollReveal className="py-[86px] md:py-[119px] px-5 h-auto flex flex-col items-center gap-[70px] md:gap-[95px] font-sf">
       <SectionHeader
-        badgeText="Testimonials"
-        title="What our clients has to say"
+        badgeText={testimonialData.header.badgeText}
+        title={testimonialData.header.title}
       />
 
       <style>{`

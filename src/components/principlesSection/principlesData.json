@@ -1,0 +1,13 @@
+{
+  "badgeText": "Our Principles",
+  "title": "Gorem ipsum dolor sit amet, dipiscing elit.",
+  "subtitle": "Principles that guide our work and ensure the best outcomes for our clients",
+  "cards": [
+    { "title": "Integrity", "text": "We are true to our words", "color": "green" },
+    { "title": "Proficiency", "text": "We are always up to the task", "color": "brown" },
+    { "title": "Honest", "text": "Always honest", "color": "green" },
+    { "title": "Creativity", "text": "Always creative", "color": "brown" },
+    { "title": "Builders", "text": "Always Building", "color": "green" },
+    { "title": "Handsome", "text": "Yes Aliyu is handsome", "color": "brown" }
+  ]
+}

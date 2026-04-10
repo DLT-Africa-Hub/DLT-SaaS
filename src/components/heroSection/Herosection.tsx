@@ -2,69 +2,27 @@
 import { Button } from "../ui/Button";
 import { ScrollReveal } from "../common/ScrollReveal";
 import type {MeetProps} from  "../../types/meet"
+import heroSectionData from "./heroSectionData.json"
 
 
 
 const Herosection = ({openModal}:MeetProps) => {
-  const beams = [
-    {
-      height: "80%",
-    },
-    {
-      height: "70%",
-    },
-    {
-      height: "60%",
-    },
-    {
-      height: "50%",
-    },
-    {
-      height: "40%",
-    },
-    {
-      height: "30%",
-    },
-    {
-      height: "20%",
-    },
-    {
-      height: "10%",
-    },
-  ];
-
-  const stats = [
-    {
-      title: "products",
-      number: 250,
-      text: "Trusted products",
-    },
-    {
-      title: "integrations",
-      number: 250,
-      text: "Integrations",
-    },
-    {
-      title: "guarantee",
-      number: 99.8,
-      text: "Uptime guarantee",
-    },
-  ];
+  const { beams, stats, heading, subheading, ctaText, viewMoreText, earthImage } = heroSectionData
   return (
     <ScrollReveal className="relative  flex flex-col h-screen pt-[153px] justify-between md:pt-0  md:items-center md:justify-center overflow-hidden rounded-b-[20px]">
       <div className="z-50 flex w-full max-w-[834px] px-5 flex-col items-center  md:justify-center gap-[20px] md:gap-[55px] font-sf text-center animate-hero-float">
         <h1 className="font-medium md:text-[56px] text-[40px]   text-body">
-          Gorem ipsum dolor sit amet, dipiscing elit.
+          {heading}
         </h1>
         <p className="font-light text-[14px] md:text-[18px] text-[#FAFAFABF]">
-          Gorem ipsum dolor sit amet, dipiscing elit.
+          {subheading}
         </p>
         <Button
         onClick={() => openModal(true)}
           variant="secondary"
           className="font-light px-[25px] md:px-[40.5px] py-[10px] md:py-[22px] text-[16px]  md:text-[18px] animate-soft-pulse"
         >
-          Book a meet
+          {ctaText}
         </Button>
       </div>
 
@@ -83,7 +41,7 @@ const Herosection = ({openModal}:MeetProps) => {
           ))}
         </div>
         <p className="hidden md:block text-[18px]  font-light cursor-pointer bg-[#FFFFFF1A] p-2 rounded-2xl text-[#2AC500] backdrop-blur-md border border-white/10 shadow-lg  ">
-          view more
+          {viewMoreText}
         </p>
       </div>
       <div className="absolute bottom-0 z-5 flex h-full w-full items-end gap-5 overflow-x-hidden rounded-b-[20px]">
@@ -107,7 +65,7 @@ const Herosection = ({openModal}:MeetProps) => {
       </div>
       <div className="absolute bottom-0 flex w-full h-[50%] md:h-auto justify-center opacity-20 rounded-b-[20px] animate-earth-orbit">
         <div className="absolute  h-full w-full rounded-b-[20px] bg-linear-to-t from-green-800/50 to-transparent" />
-        <img loading='lazy' src="earth.png" className="w-[1360px] object-cover rounded-b-[20px]" alt="" />
+        <img loading='lazy' src={earthImage} className="w-[1360px] object-cover rounded-b-[20px]" alt="" />
       </div>
     </ScrollReveal>
   );

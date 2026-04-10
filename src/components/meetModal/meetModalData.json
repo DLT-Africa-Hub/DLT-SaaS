@@ -1,0 +1,16 @@
+{
+  "title": "Choose Meeting Platform",
+  "cancelText": "Cancel",
+  "backText": "Back",
+  "scheduleTitlePrefix": "Schedule",
+  "platforms": {
+    "meet": {
+      "label": "Google Meet",
+      "url": "https://calendly.com/druidde/meet-call"
+    },
+    "zoom": {
+      "label": "Zoom",
+      "url": "https://calendly.com/druidde/zoom-call"
+    }
+  }
+}

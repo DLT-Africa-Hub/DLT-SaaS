@@ -1,0 +1,29 @@
+{
+  "header": {
+    "badgeText": "Our Pricing",
+    "title": "Check out our Pricing",
+    "subtitle": "Comprehensive tech stack for all your digital needs"
+  },
+  "roleLabels": {
+    "techLead": "Tech Lead",
+    "product": "Product",
+    "marketing": "Marketing"
+  },
+  "plans": [
+    {
+      "title": "Hourly Rate",
+      "text": "Borem ipsum dolor sit amet adipiscing elit.",
+      "costs": { "techLead": 5000, "product": 6000, "marketing": 8000 }
+    },
+    {
+      "title": "Monthly Rate",
+      "text": "Borem ipsum dolor sit amet adipiscing elit.",
+      "costs": { "techLead": 5000, "product": 6000, "marketing": 8000 }
+    },
+    {
+      "title": "Yearly Rate",
+      "text": "Borem ipsum dolor sit amet adipiscing elit.",
+      "costs": { "techLead": 5000, "product": 6000, "marketing": 8000 }
+    }
+  ]
+}

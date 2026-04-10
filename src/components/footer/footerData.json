@@ -1,0 +1,31 @@
+{
+  "cta": {
+    "title": "Want to contact us?",
+    "subtitle": "Comprehensive tech stack for all your digital needs",
+    "buttonText": "Book a meet",
+    "image": "dlt.png"
+  },
+  "brand": {
+    "logo": "dltMonoWhite.png",
+    "logoAlt": "DLTHub"
+  },
+  "socials": [
+    { "icon": "FaFacebook", "link": "wwww.facebook.com" },
+    { "icon": "FaInstagram", "link": "wwww.instagram.com" },
+    { "icon": "FaLinkedin", "link": "wwww.linkedin.com" },
+    { "icon": "FaXTwitter", "link": "wwww.twitter.com" },
+    { "icon": "FaGithub", "link": "wwww.github.com" }
+  ],
+  "contact": {
+    "title": "Contact",
+    "location": "2, Sheikh Zakariyah Adebayo Yusuf Street, PEGAMUT, 102112, Ota, Ogun State",
+    "phone": {
+      "display": "(234)815 650 9701",
+      "href": "tel:+2348156509701"
+    },
+    "email": {
+      "display": "info@dlthub.org",
+      "href": "mailto:info@dlthub.org"
+    }
+  }
+}

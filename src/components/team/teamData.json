@@ -1,0 +1,64 @@
+{
+  "header": {
+    "badgeText": "Our Team",
+    "title": "Meet the team",
+    "subtitle": "Principles that guide our work and ensure the best outcomes for our clients"
+  },
+  "members": [
+    {
+      "name": "Aliu Musa",
+      "position": "Director of DLThub",
+      "photo": "faceFive.png",
+      "socials": {
+        "facebook": "wwww.facebook.com",
+        "twitter": "wwww.twitter.com",
+        "github": "wwww.github.com",
+        "linkedin": "wwww.linkedin.com"
+      }
+    },
+    {
+      "name": "Seyiyah Abolaji",
+      "position": "Product Manager",
+      "photo": "faceOne.png",
+      "socials": {
+        "facebook": "wwww.facebook.com",
+        "twitter": "wwww.twitter.com",
+        "github": "wwww.github.com",
+        "linkedin": "wwww.linkedin.com"
+      }
+    },
+    {
+      "name": "Raji Abdullahi",
+      "position": "Software Engineer",
+      "photo": "faceFour.png",
+      "socials": {
+        "facebook": "wwww.facebook.com",
+        "twitter": "wwww.twitter.com",
+        "github": "wwww.github.com",
+        "linkedin": "wwww.linkedin.com"
+      }
+    },
+    {
+      "name": "Ibrahim Aliyu",
+      "position": "Software Engineer",
+      "photo": "faceThree.png",
+      "socials": {
+        "facebook": "wwww.facebook.com",
+        "twitter": "wwww.twitter.com",
+        "github": "wwww.github.com",
+        "linkedin": "wwww.linkedin.com"
+      }
+    },
+    {
+      "name": "Fawziyah Dada",
+      "position": "Graphic Designer",
+      "photo": "faceTwo.png",
+      "socials": {
+        "facebook": "wwww.facebook.com",
+        "twitter": "wwww.twitter.com",
+        "github": "wwww.github.com",
+        "linkedin": "wwww.linkedin.com"
+      }
+    }
+  ]
+}

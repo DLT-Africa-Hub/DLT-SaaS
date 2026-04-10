@@ -1,7 +1,12 @@
 import { useState, useEffect, useRef } from "react";
 import { Button } from "../ui/Button";
+import headerData from "./headerData.json";
 
-const Header = () => {
+type HeaderProps = {
+  onContactClick: () => void
+}
+
+const Header = ({ onContactClick }: HeaderProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [visible, setVisible] = useState(true);
   const lastScrollY = useRef(0);
@@ -34,18 +39,20 @@ const Header = () => {
     >
       <div className="relative flex items-center justify-between">
         {/* logo */}
-        <img src="/logo.png" alt="logo" className="h-8 w-auto md:h-10" />
+        <img src={headerData.logo.src} alt={headerData.logo.alt} className="h-8 w-auto md:h-10" />
 
         {/* desktop navigation */}
         <nav className="hidden items-center gap-24 rounded-xl bg-[#FFFFFF1A] px-[30px] py-5 font-sf text-[18px] font-normal backdrop-blur-md border border-white/10 shadow-lg md:flex">
-          <a href="">Solutions</a>
-          <a href="">Team</a>
-          <a href="">Pricing</a>
+          {headerData.navigation.map((item) => (
+            <a key={item} href="">
+              {item}
+            </a>
+          ))}
         </nav>
 
         {/* desktop actions */}
         <div className="hidden items-center gap-4 md:flex">
-          <Button variant="primary">Contact Us</Button>
+          <Button variant="primary" onClick={onContactClick}>{headerData.actions.contactButtonText}</Button>
         </div>
 
         {/* mobile menu button */}
@@ -64,13 +71,22 @@ const Header = () => {
       {isOpen && (
         <div className="absolute mt-3 flex w-[90%] flex-col gap-4 rounded-2xl bg-[#FFFFFF1A] p-4 font-sf text-base backdrop-blur-md border border-white/10 shadow-lg md:hidden">
           <nav className="flex flex-col gap-3">
-            <a href="">Solutions</a>
-            <a href="">Team</a>
-            <a href="">Pricing</a>
+            {headerData.navigation.map((item) => (
+              <a key={item} href="">
+                {item}
+              </a>
+            ))}
           </nav>
           <div className="mt-2 flex flex-col gap-3">
-            <Button variant="primary" className="w-full">
-              Contact Us
+            <Button
+              variant="primary"
+              className="w-full"
+              onClick={() => {
+                onContactClick()
+                setIsOpen(false)
+              }}
+            >
+              {headerData.actions.contactButtonText}
             </Button>
           </div>
         </div>

@@ -5,49 +5,35 @@ import { MdOutlineTerminal } from "react-icons/md";
 import { RiTerminalBoxLine } from "react-icons/ri";
 import { GoGitMerge } from "react-icons/go";
 import { CiShare2 } from "react-icons/ci";
+import expertiseData from "./expertiseData.json"
 
 const Expertise = () => {
 
-    interface expert {
+    interface Expert {
         title: string
         text: string
         icon: IconType
         strokeWidth?: number
     }
 
-    const expertise: expert[] = [
-        {
-            title: "Frontend Development",
-            text: "React, React Native, Next.Js, Typescript, JavaScript...",
-            icon: RiTerminalBoxLine,
-            strokeWidth: 0,
-        },
-        {
-            title: "Backend Development",
-            text: "React, React Native, Next.Js, Typescript, JavaScript...",
-            icon: MdOutlineTerminal,
-            strokeWidth: 0,
-        },
-        {
-            title: "Web & Mobile Development",
-            text: "React, React Native, Next.Js, Typescript, JavaScript...",
-            icon: GoGitMerge,
-            strokeWidth: 1.3,
-        },
-        {
-            title: "Frontend Build",
-            text: "React, React Native, Next.Js, Typescript, JavaScript...",
-            icon: CiShare2,
-            strokeWidth: 1.4,
-        },
-    ]
+    const iconMap: Record<string, IconType> = {
+      RiTerminalBoxLine,
+      MdOutlineTerminal,
+      GoGitMerge,
+      CiShare2,
+    }
+
+    const expertise: Expert[] = expertiseData.items.map((item) => ({
+      ...item,
+      icon: iconMap[item.icon] ?? RiTerminalBoxLine,
+    }))
 
   return (
     <ScrollReveal className='py-[86px] md:py-[150px] h-screen flex flex-col items-center gap-[46px] font-sf' direction="up">
         <SectionHeader
-          badgeText="Our Expertise"
-          title="Technologies and Skills"
-          subtitle="Comprehensive tech stack for all your digital needs"
+          badgeText={expertiseData.header.badgeText}
+          title={expertiseData.header.title}
+          subtitle={expertiseData.header.subtitle}
           className='w-[673px]'
         />
 
@@ -66,7 +52,7 @@ const Expertise = () => {
               ))}
           </div>
           <div className='hidden md:block w-[623px] h-[545px] rounded-[20px]'>
-              <img loading="lazy" src="rectangle.png" alt="" className='h-full w-full object-cover' />
+              <img loading="lazy" src={expertiseData.illustration} alt="" className='h-full w-full object-cover' />
           </div>
         </div>
     </ScrollReveal>

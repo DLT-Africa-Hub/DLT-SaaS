@@ -1,0 +1,14 @@
+{
+  "logo": {
+    "src": "/logo.png",
+    "alt": "logo"
+  },
+  "navigation": [
+    "Solutions",
+    "Team",
+    "Pricing"
+  ],
+  "actions": {
+    "contactButtonText": "Contact Us"
+  }
+}

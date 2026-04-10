@@ -3,89 +3,28 @@ import { useState } from 'react'
 import { SectionHeader } from '../ui/SectionHeader'
 import { ScrollReveal } from '../common/ScrollReveal'
 import { FaXTwitter, FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa6";
+import teamData from "./teamData.json"
 
 
 
 const Team = () => {
     const [hoveredTall, setHoveredTall] = useState<"top" | "bottom" | null>(null)
     const [hoveredRight, setHoveredRight] = useState<"top" | "bottom" | null>(null)
-    const team = [
-        {
-            name:"Aliu Musa",
-            position: "Director of DLThub",
-            socials:{
-                facebook: "wwww.facebook.com",
-                twitter: "wwww.twitter.com",
-                github: "wwww.github.com",
-                linkedin: "wwww.linkedin.com",
-
-            },
-            photo:"faceFive.png"
-        },
-        {
-            name:"Seyiyah Abolaji",
-            position: "Product Manager",
-            socials:{
-                facebook: "wwww.facebook.com",
-                twitter: "wwww.twitter.com",
-                github: "wwww.github.com",
-                linkedin: "wwww.linkedin.com",
-
-            },
-            photo:"faceOne.png"
-        },
-        {
-            name:"Raji Abdullahi",
-            position: "Software Engineer",
-            socials:{
-                facebook: "wwww.facebook.com",
-                twitter: "wwww.twitter.com",
-                github: "wwww.github.com",
-                linkedin: "wwww.linkedin.com",
-
-            },
-            photo:"faceFour.png"
-        },
-        {
-            name:"Ibrahim Aliyu",
-            position: "Software Engineer",
-            socials:{
-                facebook: "wwww.facebook.com",
-                twitter: "wwww.twitter.com",
-                github: "wwww.github.com",
-                linkedin: "wwww.linkedin.com",
-
-            },
-            photo:"faceThree.png"
-        },
-        {
-            name:"Fawziyah Dada",
-            position: "Graphic Designer",
-            socials:{
-                facebook: "wwww.facebook.com",
-                twitter: "wwww.twitter.com",
-                github: "wwww.github.com",
-                linkedin: "wwww.linkedin.com",
-
-            },
-            photo:"faceTwo.png"
-        },
-
-    ]
+    const team = teamData.members
   return (
     <ScrollReveal className='md:py-[119px]  py-[86px] h-auto flex flex-col items-center gap-[95px] bg-linear-to-t from-[#34de002f] from-0% to-platform font-sf'>
        <SectionHeader
-        badgeText="Our Team"
-        title="Meet the team"
-        subtitle="Principles that guide our work and ensure the best outcomes for our clients"
+        badgeText={teamData.header.badgeText}
+        title={teamData.header.title}
+        subtitle={teamData.header.subtitle}
         align='left'
         className='md:hidden px-[20px]'
         
       />
        <SectionHeader
-        badgeText="Our Team"
-        title="Meet the team"
-        subtitle="Principles that guide our work and ensure the best outcomes for our clients"
+        badgeText={teamData.header.badgeText}
+        title={teamData.header.title}
+        subtitle={teamData.header.subtitle}
        
         className='hidden md:flex'
         
@@ -277,7 +216,7 @@ const Team = () => {
 
        <div className='px-[20px] w-full flex gap-[30px] flex-col items-center  md:hidden'>
           {team.map((member) => (
-            <div className='relative w-full h-[419px]'>
+            <div key={member.name} className='relative w-full h-[419px]'>
                  <img src={member.photo} className='h-full w-full rounded-[50px]   mobileFit object-cover' alt={member.name} loading='lazy' />
                 <div className='absolute  bottom-0 pl-[27px] pb-[35px] rounded-b-[50px] w-full bg-linear-to-t from-black/20 from-90%  flex flex-col items-start gap-[15px] '>
               

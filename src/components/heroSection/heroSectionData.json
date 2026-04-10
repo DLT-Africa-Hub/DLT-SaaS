@@ -1,0 +1,22 @@
+{
+  "heading": "Gorem ipsum dolor sit amet, dipiscing elit.",
+  "subheading": "Gorem ipsum dolor sit amet, dipiscing elit.",
+  "ctaText": "Book a meet",
+  "viewMoreText": "view more",
+  "earthImage": "earth.png",
+  "beams": [
+    { "height": "80%" },
+    { "height": "70%" },
+    { "height": "60%" },
+    { "height": "50%" },
+    { "height": "40%" },
+    { "height": "30%" },
+    { "height": "20%" },
+    { "height": "10%" }
+  ],
+  "stats": [
+    { "title": "products", "number": 250, "text": "Trusted products" },
+    { "title": "integrations", "number": 250, "text": "Integrations" },
+    { "title": "guarantee", "number": 99.8, "text": "Uptime guarantee" }
+  ]
+}

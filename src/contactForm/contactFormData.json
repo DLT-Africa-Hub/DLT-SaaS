@@ -1,0 +1,26 @@
+{
+   "head": {
+    "title": "Send us a message",
+    "subTitle": "Kindly fill out the form and our representative will get back to you."
+   },
+   "formDetails":{
+      "input":{
+         "name":{
+            "label": "Full Name",
+            "placeholder": "enter your full name"
+         },
+         "email":{
+            "label": "Email address",
+            "placeholder": "enter your email address"
+         },
+         "message":{
+            "label": "Your message",
+            "placeholder": "message..."
+         }
+      },
+      "button":{
+         "text":"Send"
+      }
+   },
+   "illustration":"contact.png" 
+}

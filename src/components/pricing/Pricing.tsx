@@ -14,7 +14,7 @@ const Pricing = () => {
         badgeText={pricingData.header.badgeText}
         title={pricingData.header.title}
         subtitle={pricingData.header.subtitle}
-        className='w-[673px]'
+        className='w-full px-5  md:w-[673px]'
         align='center'
       />
 

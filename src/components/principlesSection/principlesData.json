@@ -1,13 +1,13 @@
 {
-  "badgeText": "Our Principles",
-  "title": "Projects we work on",
-  "subtitle": "Principles that guide our work and ensure the best outcomes for our clients",
+  "badgeText": "Principles",
+  "title": "How we build",
+  "subtitle": "Six principles that guide every product and client project.",
   "cards": [
-    { "title": "Software Development", "text": "Using languages like react", "color": "green" },
-    { "title": "Blockchain Development", "text": "Trusted products", "color": "brown" },
-    { "title": "Smart Contract Developement", "text": "Trusted products", "color": "green" },
-    { "title": "Mobile App Developement", "text": "Trusted products", "color": "brown" },
-    { "title": "Website Development", "text": "Trusted products", "color": "green" },
-    { "title": "Product Developement", "text": "Trusted products", "color": "brown" }
+    { "title": "Keep it simple", "text": "Clear systems are easier to use, maintain, and scale.", "color": "green" },
+    { "title": "Build for reliability", "text": "We prioritize stability from architecture to release.", "color": "brown" },
+    { "title": "Solve real problems", "text": "Every feature should support a real business outcome.", "color": "green" },
+    { "title": "Think long term", "text": "We choose patterns that support growth, not quick fixes.", "color": "brown" },
+    { "title": "Ship with discipline", "text": "We work in clear milestones and communicate progress early.", "color": "green" },
+    { "title": "Own the result", "text": "We stay accountable after launch and support adoption.", "color": "brown" }
   ]
 }

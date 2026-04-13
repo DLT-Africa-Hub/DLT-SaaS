@@ -1,38 +1,38 @@
 {
   "header": {
     "badgeText": "Testimonials",
-    "title": "What our clients has to say"
+    "title": "What partners say about working with us"
   },
   "items": [
     {
       "company": "Celo Dao Africa",
       "logo": "celo.jpg",
-      "description": "Borem ipsum dolor sit amet adipiscing elit.",
-      "testimonial": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+      "description": "Operations Lead",
+      "testimonial": "The team understood our workflow quickly and delivered a stable platform we could rely on."
     },
     {
       "company": "Celo Dao Africa",
       "logo": "celo.jpg",
-      "description": "Borem ipsum dolor sit amet adipiscing elit.",
-      "testimonial": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+      "description": "Product Manager",
+      "testimonial": "Communication was clear, timelines were realistic, and each release solved a real need."
     },
     {
       "company": "Celo Dao Africa",
       "logo": "celo.jpg",
-      "description": "Borem ipsum dolor sit amet adipiscing elit.",
-      "testimonial": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+      "description": "Technology Director",
+      "testimonial": "Their product experience showed in the quality of architecture, testing, and delivery."
     },
     {
       "company": "Celo Dao Africa",
       "logo": "celo.jpg",
-      "description": "Borem ipsum dolor sit amet adipiscing elit.",
-      "testimonial": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+      "description": "Program Lead",
+      "testimonial": "They helped us move from scattered tools to one reliable system our team actually uses."
     },
     {
       "company": "Celo Dao Africa",
       "logo": "celo.jpg",
-      "description": "Borem ipsum dolor sit amet adipiscing elit.",
-      "testimonial": "Torem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
+      "description": "Head of Delivery",
+      "testimonial": "We trusted them with a complex project and they delivered with strong execution and support."
     }
   ]
 }

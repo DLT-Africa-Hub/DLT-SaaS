@@ -12,7 +12,7 @@ const Team = () => {
     const [hoveredRight, setHoveredRight] = useState<"top" | "bottom" | null>(null)
     const team = teamData.members
   return (
-    <ScrollReveal className='md:py-[119px]  py-[86px] h-auto flex flex-col items-center gap-[95px] bg-linear-to-t from-[#34de002f] from-0% to-platform font-sf'>
+    <ScrollReveal className='relative overflow-hidden  md:py-[119px]  py-[86px] h-auto flex flex-col items-center gap-[95px] bg-linear-to-t from-[#34de002f] from-0% to-platform font-sf'>
        <SectionHeader
         badgeText={teamData.header.badgeText}
         title={teamData.header.title}
@@ -29,6 +29,10 @@ const Team = () => {
         className='hidden md:flex'
         
       />
+
+      <div className='absolute w-[1867px] top-[-467px] left-[215px] z-0 rotate-[5.05deg] opacity h-[1866px]'>
+            <img src={teamData.bg} alt="dltbg" />
+      </div>
        <div className='hidden md:flex items-center gap-[29px]'>
         {/* left */}
         <div className='group relative h-[869px] w-[376px] overflow-hidden rounded-[500px] border-2 border-[#5e5e5e] font-sf'>

@@ -58,7 +58,7 @@ const Header = ({ onContactClick }: HeaderProps) => {
         {/* mobile menu button */}
         <button
           type="button"
-          className="inline-flex h-10 w-10 items-center justify-center rounded-full backdrop-blur-md md:hidden"
+          className="inline-flex h-10 w-10 flex-col items-center justify-center rounded-full backdrop-blur-md md:hidden"
           onClick={() => setIsOpen((prev) => !prev)}
           aria-label="Toggle navigation"
         >

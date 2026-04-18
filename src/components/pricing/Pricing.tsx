@@ -5,6 +5,7 @@ import { SlGlobeAlt } from "react-icons/sl";
 import pricingData from "./pricingData.json"
 
 const Pricing = () => {
+  const dashes = Array.from({ length: 20 });
 
   return (
     <ScrollReveal id="pricing" className='scroll-mt-[100px] pt-[86px] md:pt-[150px] pb-[50px]  flex flex-col items-center gap-[85px] font-sf' direction="up">
@@ -40,9 +41,17 @@ const Pricing = () => {
 
                     </div>
 
-                    <p className="w-full text-[13px] md:text-[14px] font-light text-[#FAFAFABF]/80 border-t border-white/10 pt-4">
+                          <div>
+                          <div className="h-px w-full bg-linear-to-r from-button via-[#1c78008d] to-[#1c780049] flex items-center justify-between">
+          {dashes.map((_, i) => (
+            <div key={i} className="h-px w-[6px] bg-platform" />
+          ))}
+        </div>
+
+                    <p className="w-full text-[13px] md:text-[14px] font-light text-[#FAFAFABF]/80  pt-4">
                       {plan.footnote}
                     </p>
+                          </div>
                 </div>
             ))}
       </div>

@@ -1,7 +1,7 @@
 {
   "badgeText": "Principles",
   "title": "How we build",
-  "subtitle": "Six principles that guide every product—ours and yours. The same practices we use on our own SaaS apply to client work.",
+  "subtitle": "Six principles that guide every product, ours and yours. The same practices we use on our own SaaS apply to client work.",
   "cards": [
     { "title": "Keep it simple", "text": "Clear systems are easier for your users to adopt, for your team to operate, and for us to extend over time.", "color": "green" },
     { "title": "Build for reliability", "text": "We design for production from day one: sensible architecture, testing, releases, and observability where it matters.", "color": "brown" },

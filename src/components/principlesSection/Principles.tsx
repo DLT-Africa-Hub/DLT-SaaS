@@ -1,26 +1,26 @@
 
 import { ScrollReveal } from '../common/ScrollReveal'
-import { Badge } from '../ui/Badge'
+
 import {Link} from 'lucide-react'
 import principlesData from "./principlesData.json"
+import { SectionHeader } from '../ui/SectionHeader'
 
 
 const Principles = () => {
     const { badgeText, title, subtitle, cards } = principlesData
   return (
     <ScrollReveal id="principles" className='min-h-screen w-full flex flex-col items-start py-[86px] md:py-[150px] gap-[75px] px-[20px] md:px-[70px] relative '>
-        <div className='w-full flex flex-col gap-[15px] font-sf'>
-            <Badge className='w-[150px]'>{badgeText}</Badge>
-            <div className='flex flex-col gap-[20px]'>
-            <p className='font-medium text-[32px] md:text-[56px] text-[#FAFAFAFA]'>{title}</p>
-            <p className='text-[#FAFAFABF] font-thin text-[14px] md:text-[18px]'>{subtitle}</p>
-            </div>
-        </div>
+        <SectionHeader
+        title={title}
+        badgeText={badgeText}
+        subtitle={subtitle}
+        align='left'
+        />
         <div className='flex flex-col md:grid md:grid-cols-3  w-full md:gap-x-[130px] md:gap-y-[37px] gap-y-[25px] '>
             {cards.map((cardDetail) => (
                 <div
                     key={cardDetail.title}
-                    className={`relative overflow-hidden w-full max-w-[486px] flex flex-col items-start gap-[46px] p-[30px] h-[240px] border border-[#5E5E5E] rounded-[20px] bg-gradient-to-tr from-[#000000] from-40% ${
+                    className={`relative overflow-hidden w-full max-w-[486px] flex flex-col items-start gap-[46px] p-[30px] border border-[#5E5E5E] rounded-[20px] bg-gradient-to-tr from-[#000000] from-40% ${
                         cardDetail.color === "green" ? "to-[#3df50077]" : "to-[#ffa851a5]"
                     }`}
                 >

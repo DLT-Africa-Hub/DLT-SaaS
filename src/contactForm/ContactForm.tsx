@@ -33,10 +33,10 @@ const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
       isOpen={isOpen}
       onRequestClose={onClose}
       shouldCloseOnOverlayClick={true}
-      className="outline-none"
-      overlayClassName="fixed pt-[130px] md:pt-0 inset-0 z-50 flex items-center justify-center px-4 bg-black/60"
+      className="outline-none mt-[100px]"
+      overlayClassName="fixed  h-screen   md:pt-0 inset-0 z-50 flex items-center justify-center px-4 bg-black/60"
     >
-    <div className="relative text-body bg-black rounded-[20px] py-[81px] px-[20px] md:px-[31px] flex items-center justify-center md:justify-between font-sf max-w-[1200px] w-full max-h-[90vh] overflow-y-auto">
+    <div className="relative text-body bg-black rounded-[20px] py-[81px] px-[20px] md:px-[31px] flex items-start justify-center md:justify-between font-sf max-w-[1200px] w-full max-h-[90vh] ">
         <button
           type="button"
           onClick={onClose}
@@ -45,7 +45,8 @@ const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
         >
           x
         </button>
-        <form className="flex items-start flex-col  w-full max-w-[570px] gap-[20px]">
+       <div className="overflow-y-auto h-[70vh]">
+       <form className="flex items-start flex-col  w-full  max-w-[570px] gap-[20px]">
             <div className="flex flex-col gap-[25px]">
                 <p className="text-[32px] md:text-[48px] font-semibold">{head.title}</p>
                 <p className="text-[14px] md:text-[16px]  font-light text-[#FEA650]">{head.subTitle}</p>
@@ -83,6 +84,7 @@ const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
                     {formDetails.button.text}
             </Button>
         </form>
+       </div>
 
         <div className="hidden md:block h-full ">
             <img src={illustration} alt="Contact form illustration" className="object-cover"/>

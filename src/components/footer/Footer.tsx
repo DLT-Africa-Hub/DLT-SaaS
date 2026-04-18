@@ -33,10 +33,10 @@ const Footer = ({openModal}:MeetProps) => {
     <footer className=" py-[86px] md:py-0 md:h-screen bg-linear-to-t from-[#34de006a] flex items-center justify-center flex-col px-5 md:px-[70px]  gap-[72px]  to-platform font-sf">
       <div className="relative hidden md:block w-[80%] h-[485px] bg-[#196106] pt-[100px] px-[61px]  rounded-[50px] overflow-hidden ">
 
-        <div className="flex flex-col items-start gap-[30px] z-10">
+        <div className="flex flex-col items-start gap-[30px] z-50">
             <div className="flex flex-col items-start gap-[20px]">
                 <p className="font-meduim text-[56px] text-[#FAFAFAFA]">{footerData.cta.title}</p>
-                <p className="font-light text-[18px] text-[#FAFAFABF] w-[80%]">{footerData.cta.subtitle}</p>
+                <p className="font-light text-[18px] text-[#FAFAFABF] w-[70%]">{footerData.cta.subtitle}</p>
 
             </div>
             <Button variant="secondary" onClick={() => openModal(true)}>{footerData.cta.buttonText}</Button>

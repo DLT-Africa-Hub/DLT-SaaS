@@ -8,6 +8,7 @@ type ScrollRevealProps = {
   className?: string;
   direction?: Direction;
   delayMs?: number;
+  id?: string;
 };
 
 const hiddenByDirection: Record<Direction, string> = {
@@ -22,6 +23,7 @@ export const ScrollReveal: React.FC<ScrollRevealProps> = ({
   className = "",
   direction = "up",
   delayMs = 0,
+  id,
 }) => {
   const { ref, isVisible } = useScrollReveal(0.15);
 
@@ -34,6 +36,7 @@ export const ScrollReveal: React.FC<ScrollRevealProps> = ({
 
   return (
     <section
+      id={id}
       ref={ref as React.RefObject<HTMLElement>}
       className={`${base} ${hidden} ${isVisible ? visible : ""} ${className}`}
       style={style}

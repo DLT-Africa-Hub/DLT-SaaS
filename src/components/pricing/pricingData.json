@@ -1,29 +1,40 @@
 {
   "header": {
-    "badgeText": "Our Pricing",
-    "title": "Check out our Pricing",
-    "subtitle": "Comprehensive tech stack for all your digital needs"
+    "badgeText": "Engagements",
+    "title": "How we work with you",
+    "subtitle": "Transparent engagement models. Final pricing and timelines follow technical discovery and agreed scope."
   },
-  "roleLabels": {
-    "techLead": "Tech Lead",
-    "product": "Product",
-    "marketing": "Marketing"
-  },
+  "disclaimer": "Every quote is tailored after we understand your product, users, and constraints—no surprise invoices mid-flight.",
   "plans": [
     {
-      "title": "Hourly Rate",
-      "text": "Borem ipsum dolor sit amet adipiscing elit.",
-      "costs": { "techLead": 5000, "product": 6000, "marketing": 8000 }
+      "title": "Discovery & roadmap",
+      "lead": "Align on goals, users, and constraints before we commit production effort.",
+      "bullets": [
+        "Structured workshops and requirements capture",
+        "Technical options and architecture direction",
+        "Milestone plan and written proposal"
+      ],
+      "footnote": "Typically a fixed discovery fee; credited toward build when you proceed."
     },
     {
-      "title": "Monthly Rate",
-      "text": "Borem ipsum dolor sit amet adipiscing elit.",
-      "costs": { "techLead": 5000, "product": 6000, "marketing": 8000 }
+      "title": "Build & launch",
+      "lead": "End-to-end product delivery from agreed scope to production release.",
+      "bullets": [
+        "Iterative milestones with demoable increments",
+        "QA, documentation, and deployment support",
+        "Handover so your team can operate the system"
+      ],
+      "footnote": "Project-based or phased contracts; scope changes are agreed in writing."
     },
     {
-      "title": "Yearly Rate",
-      "text": "Borem ipsum dolor sit amet adipiscing elit.",
-      "costs": { "techLead": 5000, "product": 6000, "marketing": 8000 }
+      "title": "Iterate & support",
+      "lead": "Ongoing product and engineering capacity after launch.",
+      "bullets": [
+        "Roadmap iterations, new modules, and refinements",
+        "Bug triage and reliability improvements",
+        "Optional retainer for predictable monthly capacity"
+      ],
+      "footnote": "Retainers include a clear definition of capacity and response expectations."
     }
   ]
 }

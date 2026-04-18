@@ -1,32 +1,32 @@
 {
   "header": {
-    "badgeText": "Expertise",
-    "title": "Product engineering and custom software delivery",
-    "subtitle": "We combine product discipline with practical engineering to ship reliable software."
+    "badgeText": "What we build",
+    "title": "Custom software and SaaS-style products for real operations",
+    "subtitle": "We operate products in production ourselves—not only client projects—so we understand uptime, permissions, billing, and admin workflows end to end."
   },
   "illustration": "rectangle.png",
   "items": [
     {
-      "title": "SaaS Products",
-      "text": "We build and maintain our own SaaS platforms with real users and production demands.",
+      "title": "SaaS & customer-facing products",
+      "text": "Subscription apps, customer portals, and multi-tenant experiences with auth, roles, and the admin tools your team needs.",
       "icon": "RiTerminalBoxLine",
       "strokeWidth": 0
     },
     {
-      "title": "Business Platforms",
-      "text": "Custom internal and external platforms tailored to how your teams actually work.",
+      "title": "Business platforms",
+      "text": "Internal and external platforms shaped around how your teams actually work—workflows, approvals, and role-based access.",
       "icon": "MdOutlineTerminal",
       "strokeWidth": 0
     },
     {
-      "title": "Dashboards and Data Tools",
-      "text": "Reporting dashboards and operational tools that make decisions faster and clearer.",
+      "title": "Dashboards & data tools",
+      "text": "Reporting and operational dashboards that make decisions faster: fewer spreadsheets, one reliable view of the business.",
       "icon": "GoGitMerge",
       "strokeWidth": 1.3
     },
     {
-      "title": "Integrations and Automation",
-      "text": "Stable integrations and automation flows that remove manual work and reduce errors.",
+      "title": "Integrations & automation",
+      "text": "Stable integrations and automation between your tools—less manual entry, fewer errors, and clearer audit trails.",
       "icon": "CiShare2",
       "strokeWidth": 1.4
     }

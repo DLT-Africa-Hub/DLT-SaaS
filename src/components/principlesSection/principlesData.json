@@ -1,13 +1,13 @@
 {
   "badgeText": "Principles",
   "title": "How we build",
-  "subtitle": "Six principles that guide every product and client project.",
+  "subtitle": "Six principles that guide every product—ours and yours. The same practices we use on our own SaaS apply to client work.",
   "cards": [
-    { "title": "Keep it simple", "text": "Clear systems are easier to use, maintain, and scale.", "color": "green" },
-    { "title": "Build for reliability", "text": "We prioritize stability from architecture to release.", "color": "brown" },
-    { "title": "Solve real problems", "text": "Every feature should support a real business outcome.", "color": "green" },
-    { "title": "Think long term", "text": "We choose patterns that support growth, not quick fixes.", "color": "brown" },
-    { "title": "Ship with discipline", "text": "We work in clear milestones and communicate progress early.", "color": "green" },
-    { "title": "Own the result", "text": "We stay accountable after launch and support adoption.", "color": "brown" }
+    { "title": "Keep it simple", "text": "Clear systems are easier for your users to adopt, for your team to operate, and for us to extend over time.", "color": "green" },
+    { "title": "Build for reliability", "text": "We design for production from day one: sensible architecture, testing, releases, and observability where it matters.", "color": "brown" },
+    { "title": "Solve real problems", "text": "Every feature ties to a business or user outcome we can name—no busywork disguised as progress.", "color": "green" },
+    { "title": "Think long term", "text": "We favour patterns you can grow into, not demos you will throw away in six months.", "color": "brown" },
+    { "title": "Ship with discipline", "text": "Milestones, demos, and written scope so you always know what is shipping next and why.", "color": "green" },
+    { "title": "Own the result", "text": "Documentation, handover, and post-launch support so the product keeps delivering after launch.", "color": "brown" }
   ]
 }

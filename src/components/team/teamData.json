@@ -2,64 +2,69 @@
   "header": {
     "badgeText": "Our Team",
     "title": "Meet the builders",
-    "subtitle": "A product minded engineering team with hands on experience shipping real systems."
+    "subtitle": "A product-minded engineering and design team with hands-on experience shipping production systems—from our own SaaS to client platforms across sectors."
   },
   "members": [
     {
       "name": "Aliu Musa",
-      "position": "Director of DLThub",
+      "position": "Director, DLTHub",
+      "tagline": "Sets delivery strategy, partnerships, and the bar for how we ship.",
       "photo": "faceFive.png",
       "socials": {
-        "facebook": "wwww.facebook.com",
-        "twitter": "wwww.twitter.com",
-        "github": "wwww.github.com",
-        "linkedin": "wwww.linkedin.com"
+        "facebook": "https://dlthub.org",
+        "twitter": "https://dlthub.org",
+        "github": "https://dlthub.org",
+        "linkedin": "https://dlthub.org"
       }
     },
     {
       "name": "Seyiyah Abolaji",
       "position": "Product Manager",
+      "tagline": "Turns goals into roadmaps, milestones, and clear trade-offs for clients.",
       "photo": "faceOne.png",
       "socials": {
-        "facebook": "wwww.facebook.com",
-        "twitter": "wwww.twitter.com",
-        "github": "wwww.github.com",
-        "linkedin": "wwww.linkedin.com"
+        "facebook": "https://dlthub.org",
+        "twitter": "https://dlthub.org",
+        "github": "https://dlthub.org",
+        "linkedin": "https://dlthub.org"
       }
     },
     {
       "name": "Raji Abdullahi",
       "position": "Software Engineer",
+      "tagline": "Builds reliable backends, APIs, and integration layers.",
       "photo": "faceFour.png",
       "socials": {
-        "facebook": "wwww.facebook.com",
-        "twitter": "wwww.twitter.com",
-        "github": "wwww.github.com",
-        "linkedin": "wwww.linkedin.com"
+        "facebook": "https://dlthub.org",
+        "twitter": "https://dlthub.org",
+        "github": "https://dlthub.org",
+        "linkedin": "https://dlthub.org"
       }
     },
     {
       "name": "Ibrahim Aliyu",
       "position": "Software Engineer",
+      "tagline": "Ships full-stack features with an eye on performance and maintainability.",
       "photo": "faceThree.png",
       "socials": {
-        "facebook": "wwww.facebook.com",
-        "twitter": "wwww.twitter.com",
-        "github": "wwww.github.com",
-        "linkedin": "wwww.linkedin.com"
+        "facebook": "https://dlthub.org",
+        "twitter": "https://dlthub.org",
+        "github": "https://dlthub.org",
+        "linkedin": "https://dlthub.org"
       }
     },
     {
       "name": "Fawziyah Dada",
       "position": "Graphic Designer",
+      "tagline": "Crafts visual systems and UI that stay coherent across products.",
       "photo": "faceTwo.png",
       "socials": {
-        "facebook": "wwww.facebook.com",
-        "twitter": "wwww.twitter.com",
-        "github": "wwww.github.com",
-        "linkedin": "wwww.linkedin.com"
+        "facebook": "https://dlthub.org",
+        "twitter": "https://dlthub.org",
+        "github": "https://dlthub.org",
+        "linkedin": "https://dlthub.org"
       }
     }
   ],
-  "bg":"teamBg.png"
+  "bg": "teamBg.png"
 }

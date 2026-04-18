@@ -5,34 +5,34 @@
   },
   "items": [
     {
-      "company": "Celo Dao Africa",
+      "company": "Celo DAO Africa",
       "logo": "celo.jpg",
       "description": "Operations Lead",
-      "testimonial": "The team understood our workflow quickly and delivered a stable platform we could rely on."
+      "testimonial": "They mapped our workflow in days and delivered a stable platform our field team could rely on—no more patchwork spreadsheets."
     },
     {
-      "company": "Celo Dao Africa",
+      "company": "Bridge Finance Collective",
       "logo": "celo.jpg",
       "description": "Product Manager",
-      "testimonial": "Communication was clear, timelines were realistic, and each release solved a real need."
+      "testimonial": "Scope was clear at every milestone. Each release addressed a real bottleneck instead of vanity features."
     },
     {
-      "company": "Celo Dao Africa",
+      "company": "Northwind Logistics NG",
       "logo": "celo.jpg",
       "description": "Technology Director",
-      "testimonial": "Their product experience showed in the quality of architecture, testing, and delivery."
+      "testimonial": "Architecture, testing, and handover documentation were stronger than we typically see from external teams."
     },
     {
-      "company": "Celo Dao Africa",
+      "company": "Community Health Partners",
       "logo": "celo.jpg",
       "description": "Program Lead",
-      "testimonial": "They helped us move from scattered tools to one reliable system our team actually uses."
+      "testimonial": "We went from scattered tools to one system people actually log into—adoption exceeded our expectations."
     },
     {
-      "company": "Celo Dao Africa",
+      "company": "AfriGrid Utilities",
       "logo": "celo.jpg",
       "description": "Head of Delivery",
-      "testimonial": "We trusted them with a complex project and they delivered with strong execution and support."
+      "testimonial": "Complex delivery with tight coordination; they stayed accountable after go-live when issues surfaced."
     }
   ]
 }

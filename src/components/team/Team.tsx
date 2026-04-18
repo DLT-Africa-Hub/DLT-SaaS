@@ -12,7 +12,7 @@ const Team = () => {
     const [hoveredRight, setHoveredRight] = useState<"top" | "bottom" | null>(null)
     const team = teamData.members
   return (
-    <ScrollReveal className='relative overflow-hidden  md:py-[119px]  py-[86px] h-auto flex flex-col items-center gap-[95px] bg-linear-to-t from-[#34de002f] from-0% to-platform font-sf'>
+    <ScrollReveal id="team" className='scroll-mt-[100px] relative overflow-hidden  md:py-[119px]  py-[86px] h-auto flex flex-col items-center gap-[95px] bg-linear-to-t from-[#34de002f] from-0% to-platform font-sf'>
        <SectionHeader
         badgeText={teamData.header.badgeText}
         title={teamData.header.title}
@@ -41,6 +41,9 @@ const Team = () => {
                 <div className='flex flex-col items-start gap-[10px]'>
                 <p className='font-semibold text-[32px] text-body'>{team[0].name}</p>
                 <p className='text-[18px] font-normal text-[#FAFAFABF]'>{team[0].position}</p>
+                {team[0].tagline ? (
+                  <p className='text-[14px] font-light text-[#FAFAFABF]/85 max-w-[300px] leading-snug'>{team[0].tagline}</p>
+                ) : null}
                 </div>
                 <div className='flex gap-[15px]  text-[#FAFAFABF]'>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={team[0].socials.twitter} >
@@ -81,6 +84,9 @@ const Team = () => {
                 <div className='flex flex-col items-start gap-[10px]'>
                 <p className='font-semibold text-[32px] text-body'>{team[1].name}</p>
                 <p className='text-[18px] font-normal text-[#FAFAFABF]'>{team[1].position}</p>
+                {team[1].tagline ? (
+                  <p className='text-[14px] font-light text-[#FAFAFABF]/85 max-w-[300px] leading-snug'>{team[1].tagline}</p>
+                ) : null}
                 </div>
                 <div className='flex gap-[15px]  text-[#FAFAFABF]'>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={team[1].socials.twitter} >
@@ -117,6 +123,9 @@ const Team = () => {
                 <div className='flex flex-col items-start gap-[10px]'>
                 <p className='font-semibold text-[32px] text-body'>{team[2].name}</p>
                 <p className='text-[18px] font-normal text-[#FAFAFABF]'>{team[2].position}</p>
+                {team[2].tagline ? (
+                  <p className='text-[14px] font-light text-[#FAFAFABF]/85 max-w-[300px] leading-snug'>{team[2].tagline}</p>
+                ) : null}
                 </div>
                 <div className='flex gap-[15px]  text-[#FAFAFABF]'>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={team[2].socials.twitter} >
@@ -158,6 +167,9 @@ const Team = () => {
                 <div className='flex flex-col items-start gap-[10px]'>
                 <p className='font-semibold text-[32px] text-body'>{team[3].name}</p>
                 <p className='text-[18px] font-normal text-[#FAFAFABF]'>{team[3].position}</p>
+                {team[3].tagline ? (
+                  <p className='text-[14px] font-light text-[#FAFAFABF]/85 max-w-[300px] leading-snug'>{team[3].tagline}</p>
+                ) : null}
                 </div>
                 <div className='flex gap-[15px]  text-[#FAFAFABF]'>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={team[3].socials.twitter} >
@@ -195,6 +207,9 @@ const Team = () => {
                 <div className='flex flex-col items-start gap-[10px]'>
                 <p className='font-semibold text-[32px] text-body'>{team[4].name}</p>
                 <p className='text-[18px] font-normal text-[#FAFAFABF]'>{team[4].position}</p>
+                {team[4].tagline ? (
+                  <p className='text-[14px] font-light text-[#FAFAFABF]/85 max-w-[300px] leading-snug'>{team[4].tagline}</p>
+                ) : null}
                 </div>
                 <div className='flex gap-[15px]  text-[#FAFAFABF]'>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={team[4].socials.twitter} >
@@ -227,6 +242,9 @@ const Team = () => {
                 <div className='flex flex-col items-start gap-[5px]'>
                 <p className='font-semibold text-[28px] text-body'>{member.name}</p>
                 <p className='text-[18px] font-light text-[#FAFAFABF]'>{member.position}</p>
+                {member.tagline ? (
+                  <p className='text-[15px] font-light text-[#FAFAFABF]/85 leading-snug pr-2'>{member.tagline}</p>
+                ) : null}
                 </div>
                 <div className='flex gap-[15px]  text-[#FAFAFABF]'>
                     <a className='pointer-events-auto cursor-pointer hover:text-body transition-colors' href={member.socials.twitter} >

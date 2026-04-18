@@ -1,26 +1,42 @@
 {
-   "head": {
-    "title": "Send us a message",
-    "subTitle": "Kindly fill out the form and our representative will get back to you."
-   },
-   "formDetails":{
-      "input":{
-         "name":{
-            "label": "Full Name",
-            "placeholder": "enter your full name"
-         },
-         "email":{
-            "label": "Email address",
-            "placeholder": "enter your email address"
-         },
-         "message":{
-            "label": "Your message",
-            "placeholder": "message..."
-         }
+  "head": {
+    "title": "Start a conversation",
+    "subTitle": "Tell us about your organisation and what you want to build. We reply within two business days with next steps—often a short discovery call."
+  },
+  "formDetails": {
+    "input": {
+      "name": {
+        "label": "Full name",
+        "placeholder": "Your name"
       },
-      "button":{
-         "text":"Send"
+      "email": {
+        "label": "Work email",
+        "placeholder": "you@company.com"
+      },
+      "company": {
+        "label": "Organisation",
+        "placeholder": "Company or project name"
+      },
+      "projectGoal": {
+        "label": "What are you trying to build?",
+        "placeholder": "e.g. customer portal, internal ops tool, integration between X and Y…"
+      },
+      "timeline": {
+        "label": "Target timeline",
+        "placeholder": "e.g. MVP in Q3, launch before year-end…"
+      },
+      "budgetBand": {
+        "label": "Budget range (optional)",
+        "placeholder": "e.g. under $10k, $10k–50k, $50k+ (helps us suggest the right engagement)"
+      },
+      "message": {
+        "label": "Anything else we should know?",
+        "placeholder": "Constraints, existing systems, team skills, links…"
       }
-   },
-   "illustration":"contact.png" 
+    },
+    "button": {
+      "text": "Send message"
+    }
+  },
+  "illustration": "contact.png"
 }

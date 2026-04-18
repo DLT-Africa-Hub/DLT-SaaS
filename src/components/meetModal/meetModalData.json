@@ -1,8 +1,10 @@
 {
-  "title": "Choose Meeting Platform",
+  "title": "Book a discovery call",
+  "subtitle": "Roughly 30 minutes to understand what you are building, who it is for, and how we can help. Choose Google Meet or Zoom, then pick a time that works.",
   "cancelText": "Cancel",
   "backText": "Back",
-  "scheduleTitlePrefix": "Schedule",
+  "scheduleTitlePrefix": "Schedule your",
+  "scheduleTitleSuffix": "discovery call",
   "platforms": {
     "meet": {
       "label": "Google Meet",

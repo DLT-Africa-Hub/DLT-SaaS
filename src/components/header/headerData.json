@@ -1,14 +1,16 @@
 {
   "logo": {
     "src": "/logo.png",
-    "alt": "logo"
+    "alt": "DLTHub"
   },
+  "tagline": "Product engineering for serious software",
   "navigation": [
-    "Solutions",
-    "Team",
-    "Pricing"
+    { "label": "What we build", "href": "#expertise" },
+    { "label": "Team", "href": "#team" },
+    { "label": "Pricing", "href": "#pricing" }
   ],
   "actions": {
-    "contactButtonText": "Contact Us"
-  }
+    "contactButtonText": "Contact us"
+  },
+  "mobileNavHint": "Response within two business days"
 }

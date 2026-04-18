@@ -12,6 +12,10 @@ type InputType = "text" | "email" | "textarea"
 const fieldTypeMap: Record<string, InputType> = {
   name: "text",
   email: "email",
+  company: "text",
+  projectGoal: "textarea",
+  timeline: "text",
+  budgetBand: "text",
   message: "textarea",
 }
 

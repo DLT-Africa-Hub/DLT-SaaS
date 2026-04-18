@@ -1,8 +1,9 @@
 {
-  "heading": "Gorem ipsum dolor sit amet, dipiscing elit.",
-  "subheading": "Gorem ipsum dolor sit amet, dipiscing elit.",
-  "ctaText": "Book a meet",
-  "viewMoreText": "view more",
+  "heading": "Software products built for your business—not slide decks.",
+  "subheading": "DLTHub is a product studio: we design and ship web products, platforms, and integrations for teams that need to go to production. The same discipline we use on our own SaaS shows up in every client engagement.",
+  "ctaText": "Book a discovery call",
+  "viewMoreText": "See what we build",
+  "viewMoreHref": "#expertise",
   "earthImage": "earth.png",
   "beams": [
     { "height": "80%" },
@@ -15,8 +16,8 @@
     { "height": "10%" }
   ],
   "stats": [
-    { "title": "products", "number": 250, "text": "Trusted products" },
-    { "title": "integrations", "number": 250, "text": "Integrations" },
-    { "title": "guarantee", "number": 99.8, "text": "Uptime guarantee" }
+    { "title": "products", "number": 35, "suffix": "+", "text": "Products shipped to production" },
+    { "title": "clients", "number": 25, "suffix": "+", "text": "Client engagements" },
+    { "title": "regions", "number": 12, "suffix": "+", "text": "Markets & time zones served" }
   ]
 }

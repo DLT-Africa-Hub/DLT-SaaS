@@ -8,7 +8,7 @@ import principlesData from "./principlesData.json"
 const Principles = () => {
     const { badgeText, title, subtitle, cards } = principlesData
   return (
-    <ScrollReveal className='min-h-screen w-full flex flex-col items-start py-[86px] md:py-[150px] gap-[75px] px-[20px] md:px-[70px] relative '>
+    <ScrollReveal id="principles" className='min-h-screen w-full flex flex-col items-start py-[86px] md:py-[150px] gap-[75px] px-[20px] md:px-[70px] relative '>
         <div className='w-full flex flex-col gap-[15px] font-sf'>
             <Badge className='w-[150px]'>{badgeText}</Badge>
             <div className='flex flex-col gap-[20px]'>

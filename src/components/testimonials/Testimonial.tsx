@@ -43,7 +43,7 @@ const Testimonial = () => {
   );
 
   return (
-    <ScrollReveal className="py-[86px] md:py-[119px] px-5 h-auto flex flex-col items-center gap-[70px] md:gap-[95px] font-sf">
+    <ScrollReveal id="testimonials" className="py-[86px] md:py-[119px] px-5 h-auto flex flex-col items-center gap-[70px] md:gap-[95px] font-sf">
       <SectionHeader
         badgeText={testimonialData.header.badgeText}
         title={testimonialData.header.title}
@@ -76,7 +76,7 @@ const Testimonial = () => {
         </div>
 
         {/* Row 2 — +15deg tilt, scrolls right (desktop only) */}
-        <div className="hidden md:block rotate-[15deg] scale-110">
+        <div className="hidden md:block rotate-15 scale-110">
           <div className="flex gap-[67px] marquee-right w-max">
             {doubled.map((test, i) => (
               <TestimonialCard key={`r2-${i}`} test={test} />

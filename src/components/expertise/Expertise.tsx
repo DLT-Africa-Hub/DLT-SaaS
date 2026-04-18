@@ -29,7 +29,7 @@ const Expertise = () => {
     }))
 
   return (
-    <ScrollReveal className='pt-[86px]  pb-[150px] md:py-[150px]  flex flex-col items-center gap-[46px] font-sf' direction="up">
+    <ScrollReveal id="expertise" className='scroll-mt-[100px] pt-[86px]  pb-[150px] md:py-[150px]  flex flex-col items-center gap-[46px] font-sf' direction="up">
         <SectionHeader
           badgeText={expertiseData.header.badgeText}
           title={expertiseData.header.title}
@@ -52,7 +52,7 @@ const Expertise = () => {
               ))}
           </div>
           <div className='hidden md:block w-[623px] h-[545px] rounded-[20px]'>
-              <img loading="lazy" src={expertiseData.illustration} alt="" className='h-full w-full object-cover' />
+              <img loading="lazy" src={expertiseData.illustration} alt="Abstract illustration representing product engineering and delivery" className='h-full w-full object-cover' />
           </div>
         </div>
     </ScrollReveal>

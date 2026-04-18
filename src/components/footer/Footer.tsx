@@ -36,7 +36,7 @@ const Footer = ({openModal}:MeetProps) => {
         <div className="flex flex-col items-start gap-[30px] z-10">
             <div className="flex flex-col items-start gap-[20px]">
                 <p className="font-meduim text-[56px] text-[#FAFAFAFA]">{footerData.cta.title}</p>
-                <p className="font-light text-[18px] text-[#FAFAFABF]">{footerData.cta.subtitle}</p>
+                <p className="font-light text-[18px] text-[#FAFAFABF] w-[80%]">{footerData.cta.subtitle}</p>
 
             </div>
             <Button variant="secondary" onClick={() => openModal(true)}>{footerData.cta.buttonText}</Button>
@@ -61,7 +61,7 @@ const Footer = ({openModal}:MeetProps) => {
 
       <div className="w-full flex flex-col gap-[35px]  md:flex-row items-start justify-between   ">
         <div className="w-full flex flex-col items-start gap-[10px]">
-            <img loading="lazy" src={footerData.brand.logo} alt={footerData.brand.logoAlt} />
+            <img loading="lazy" src={footerData.brand.logo} className="w-[181px]" alt={footerData.brand.logoAlt} />
             <div className="flex items-center gap-[15px]">
                 {socials.map((social) => (
                     <a key={social.link} href={social.link}>

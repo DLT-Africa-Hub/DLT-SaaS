@@ -34,7 +34,14 @@ const Expertise = () => {
           badgeText={expertiseData.header.badgeText}
           title={expertiseData.header.title}
           subtitle={expertiseData.header.subtitle}
-          className='w-full max-w-[673px]'
+          align='left'
+          className='w-full max-w-[900px] px-5 md:hidden'
+        />
+        <SectionHeader
+          badgeText={expertiseData.header.badgeText}
+          title={expertiseData.header.title}
+          subtitle={expertiseData.header.subtitle}
+          className='hidden w-full max-w-[900px] md:flex'
         />
 
         <div className='px-5 md:px-0 md:flex md:flex-row items-center gap-[50px]'>

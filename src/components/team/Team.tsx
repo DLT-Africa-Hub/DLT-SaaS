@@ -35,7 +35,7 @@ const Team = () => {
       </div>
        <div className='hidden md:flex items-center gap-[29px]'>
         {/* left */}
-        <div className='group relative h-[869px] w-[376px] overflow-hidden rounded-[500px] border-2 border-[#5e5e5e] font-sf'>
+        <div className='group relative h-[869px] w-[376px] overflow-hidden rounded-[500px]  font-sf'>
             <img loading='lazy' src={team[0].photo} className='h-full w-full rounded-[500px] object-cover' alt={team[0].name} />
             <div className='pointer-events-none absolute inset-x-0 bottom-40 bg-black/10 px-[27px] py-8 flex flex-col items-start gap-[20px] opacity-0 -translate-x-6 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:translate-x-0'>
                 <div className='flex flex-col items-start gap-[10px]'>
@@ -69,11 +69,11 @@ const Team = () => {
           hoveredTall ? "gap-0" : "gap-[37px]"
         }`}>
         <div
-          className={`group relative w-[376px] overflow-hidden rounded-[500px] border-2 border-[#5e5e5e] font-sf transition-all duration-500 ease-out ${
+          className={`group relative w-[376px] overflow-hidden rounded-[500px]  font-sf transition-all duration-500 ease-out ${
             hoveredTall === "top"
               ? "h-[869px]"
               : hoveredTall === "bottom"
-              ? "h-[2px]"
+              ? "h-0"
               : "h-[246px]"
           }`}
           onMouseEnter={() => setHoveredTall("top")}
@@ -108,11 +108,11 @@ const Team = () => {
         </div>
 
         <div
-          className={`group relative w-[376px] overflow-hidden rounded-[500px] border-2 border-[#5e5e5e] font-sf transition-all duration-500 ease-out ${
+          className={`group relative w-[376px] overflow-hidden rounded-[500px]  font-sf transition-all duration-500 ease-out ${
             hoveredTall === "bottom"
               ? "h-[869px]"
               : hoveredTall === "top"
-              ? "h-[2px]"
+              ? "h-0"
               : "h-[586px]"
           }`}
           onMouseEnter={() => setHoveredTall("bottom")}
@@ -152,11 +152,11 @@ const Team = () => {
           hoveredRight ? "gap-0" : "gap-[37px]"
         }`}>
              <div
-          className={`group relative w-[376px] overflow-hidden rounded-[500px] border-2 border-[#5e5e5e] font-sf transition-all duration-500 ease-out ${
+          className={`group relative w-[376px] overflow-hidden rounded-[500px] font-sf transition-all duration-500 ease-out ${
           hoveredRight === "bottom"
               ? "h-[869px]"
               : hoveredRight === "top"
-              ? "h-[2px]"
+              ? "h-0"
               : "h-[586px]"
           }`}
           onMouseEnter={() => setHoveredRight("bottom")}
@@ -192,11 +192,11 @@ const Team = () => {
         </div>
 
         <div
-          className={`group relative w-[376px] overflow-hidden rounded-[500px] border-2 border-[#5e5e5e] font-sf transition-all duration-500 ease-out ${
+          className={`group relative w-[376px] overflow-hidden rounded-[500px]  font-sf transition-all duration-500 ease-out ${
             hoveredRight === "top"
               ? "h-[869px]"
               : hoveredRight === "bottom"
-              ? "h-[2px]"
+              ? "h-0"
               : "h-[246px]"
           }`}
           onMouseEnter={() => setHoveredRight("top")}

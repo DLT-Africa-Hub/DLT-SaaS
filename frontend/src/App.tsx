@@ -9,6 +9,8 @@ import Team from './components/team/Team';
 import Testimonial from './components/testimonials/Testimonial';
 import { useState } from "react";
 import ContactForm from './contactForm/ContactForm';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -30,6 +32,17 @@ export default function App() {
      <Footer openModal={setIsMeetOpen}/>
      <MeetModal  isOpen={isMeetOpen} onClose={() => setIsMeetOpen(false)}/>
       <ContactForm isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
+      <ToastContainer
+        position="top-right"
+        autoClose={4000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     
   
   

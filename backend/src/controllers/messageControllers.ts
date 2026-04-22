@@ -29,3 +29,53 @@ export const submitContact = asyncHandler(
     });
   },
 );
+
+// @desc    Get all messages
+export const getMessages = asyncHandler(
+  async (_req: Request, res: Response) => {
+    const messages = await Contact.find();
+
+    res.status(200).json({
+      success: true,
+      data: messages,
+    });
+  },
+);
+
+// @desc    Get a particular message by ID
+export const getMessageById = asyncHandler(
+  async (req: Request, res: Response) => {
+    const { id } = req.params;
+
+    const message = await Contact.findById(id);
+
+    if (!message) {
+      res.status(404);
+      throw new Error('Message not found');
+    }
+
+    res.status(200).json({
+      success: true,
+      data: message,
+    });
+  },
+);
+
+// @desc    Delete a message
+export const deleteMessage = asyncHandler(
+  async (req: Request, res: Response) => {
+    const { id } = req.params;
+
+    const message = await Contact.findByIdAndDelete(id);
+
+    if (!message) {
+      res.status(404);
+      throw new Error('Message not found');
+    }
+
+    res.status(200).json({
+      success: true,
+      message: 'Message deleted successfully',
+    });
+  },
+);

@@ -10,7 +10,7 @@ const Herosection = ({openModal}:MeetProps) => {
   const { beams, stats, heading, subheading, ctaText, viewMoreText, viewMoreHref, earthImage } = heroSectionData
   return (
     <ScrollReveal className="relative  flex flex-col h-screen pt-[153px] justify-between md:pt-0  md:items-center md:justify-center overflow-hidden rounded-b-[20px]">
-      <div className="z-50 flex w-full max-w-[834px] px-5 flex-col items-center  md:justify-center gap-[20px] md:gap-[55px] font-sf text-center animate-hero-float">
+      <div className="z-50 flex w-full max-w-[834px] px-5 flex-col items-center  md:justify-center gap-[20px] md:gap-[55px] font-sf text-center">
         <h1 className="font-medium md:text-[56px] text-[40px]   text-body">
           {heading}
         </h1>

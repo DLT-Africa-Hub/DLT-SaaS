@@ -27,28 +27,28 @@
 
 @keyframes beam-wave {
   0% {
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
     opacity: 0.4;
   }
   50% {
-    transform: translateY(-12px);
+    transform: translate3d(0, -12px, 0);
     opacity: 0.85;
   }
   100% {
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
     opacity: 0.5;
   }
 }
 
 @keyframes earth-orbit {
   0% {
-    transform: translateX(-10px) scale(1);
+    transform: translate3d(-10px, 0, 0);
   }
   50% {
-    transform: translateX(10px) scale(1.03);
+    transform: translate3d(10px, 0, 0);
   }
   100% {
-    transform: translateX(-10px) scale(1);
+    transform: translate3d(-10px, 0, 0);
   }
 }
 
@@ -81,10 +81,12 @@
 
 @utility animate-beam-wave {
   animation: beam-wave 6s ease-in-out infinite alternate;
+  will-change: transform, opacity;
 }
 
 @utility animate-earth-orbit {
   animation: earth-orbit 20s ease-in-out infinite alternate;
+  will-change: transform;
 }
 
 .mobileFit{

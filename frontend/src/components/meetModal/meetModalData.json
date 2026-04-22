@@ -8,11 +8,11 @@
   "platforms": {
     "meet": {
       "label": "Google Meet",
-      "url": "https://calendly.com/druidde/meet-call"
+      "url": "https://calendly.com/dlthub-info/dlthub-meeting"
     },
     "zoom": {
       "label": "Zoom",
-      "url": "https://calendly.com/druidde/zoom-call"
+      "url": "https://calendly.com/dlthub-info/dlthub-meeting"
     }
   }
 }

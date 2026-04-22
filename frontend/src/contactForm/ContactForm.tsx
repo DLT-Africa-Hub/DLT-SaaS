@@ -1,6 +1,9 @@
 import { Button } from "../components/ui/Button"
 import contactFormData from "./contactFormData.json"
 import Modal from "react-modal"
+import { useState, useRef } from "react"
+import { submitMessage } from "../services/contactService"
+import { toast } from "react-toastify"
 
 type InputField = {
   label: string
@@ -27,6 +30,36 @@ type ContactFormProps = {
 const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
   const { head, formDetails, illustration } = contactFormData
   const inputEntries = Object.entries(formDetails.input) as [string, InputField][]
+  const formRef = useRef<HTMLFormElement>(null)
+  const [isLoading, setIsLoading] = useState(false)
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setIsLoading(true)
+
+    try {
+      const formData = new FormData(formRef.current!)
+      const data = {
+        name: formData.get("name") as string,
+        email: formData.get("email") as string,
+        company: formData.get("company") as string,
+        projectGoal: formData.get("projectGoal") as string,
+        timeline: formData.get("timeline") as string,
+        budgetBand: formData.get("budgetBand") as string,
+        message: formData.get("message") as string,
+      }
+
+      await submitMessage(data)
+      toast.success("Message sent successfully! We'll be in touch soon.")
+      formRef.current?.reset()
+      onClose()
+    } catch (error: unknown) {
+      const errorMsg = error instanceof Error ? error.message : "Failed to send message. Please try again."
+      toast.error(errorMsg)
+    } finally {
+      setIsLoading(false)
+    }
+  }
 
   return (
     <Modal
@@ -46,11 +79,13 @@ const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
           x
         </button>
        <div className="overflow-y-auto h-[70vh]">
-       <form className="flex items-start flex-col  w-full  max-w-[570px] gap-[20px]">
+       <form ref={formRef} onSubmit={handleSubmit} className="flex items-start flex-col  w-full  max-w-[570px] gap-[20px]">
             <div className="flex flex-col gap-[25px]">
                 <p className="text-[32px] md:text-[48px] font-semibold">{head.title}</p>
                 <p className="text-[14px] md:text-[16px]  font-light text-[#FEA650]">{head.subTitle}</p>
             </div>
+
+
 
             <div className="flex flex-col gap-[10px] w-full" >
                   {inputEntries.map(([key, field]) => {
@@ -66,6 +101,7 @@ const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
                             placeholder={field.placeholder}
                             className="w-full rounded-[10px] border border-[#464646] bg-transparent px-4 py-3 outline-none focus-visible:ring-2 focus-visible:ring-button"
                             rows={5}
+                            disabled={isLoading}
                           />
                         ) : (
                           <input
@@ -74,14 +110,21 @@ const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
                             type={fieldType}
                             placeholder={field.placeholder}
                             className="w-full rounded-[10px] border border-[#464646] bg-transparent px-4 py-3 outline-none focus-visible:ring-2 focus-visible:ring-button"
+                            disabled={isLoading}
+                            required={key === "name" || key === "email"}
                           />
                         )}
                       </div>
                     )
                   })}
             </div>
-            <Button className="w-full" variant="primary">
-                    {formDetails.button.text}
+            <Button 
+              type="submit" 
+              className="w-full" 
+              variant="primary"
+              disabled={isLoading}
+            >
+                    {isLoading ? "Sending..." : formDetails.button.text}
             </Button>
         </form>
        </div>

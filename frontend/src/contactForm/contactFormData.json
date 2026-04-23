@@ -10,7 +10,7 @@
         "placeholder": "Your name"
       },
       "email": {
-        "label": "Work email",
+        "label": "Email",
         "placeholder": "you@company.com"
       },
       "company": {

@@ -6,9 +6,14 @@ import contactRoutes from './routes/contactRoutes';
 
 const app = express();
 
+const allowedOrigins = ['http://localhost:5173'];
+if (process.env.FRONTEND_URL) {
+  allowedOrigins.push(process.env.FRONTEND_URL);
+}
+
 app.use(
   cors({
-    origin: '*',
+    origin: allowedOrigins,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
   }),
@@ -20,7 +25,7 @@ app.use('/api/contact', contactRoutes);
 
 app.get('/api/health', async (req, res) => {
   const dbState = mongoose.connection.readyState;
-  const isDbConnected = dbState === 1; // 1 means connected
+  const isDbConnected = dbState === 1; 
 
   if (isDbConnected) {
     res.status(200).json({

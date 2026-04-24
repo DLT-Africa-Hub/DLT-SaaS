@@ -1,0 +1,66 @@
+# Deploy static frontend (React + Vite) to Namecheap via FTP/FTPS.
+# Secrets: FTP_SERVER, FTP_USERNAME, FTP_PASSWORD
+#
+# Intended for the DLT-SaaS GitHub repo where the Vite app lives at the REPOSITORY ROOT.
+# If this app lives in a monorepo subfolder `sass-page/`, adjust working-directory and dist paths.
+#
+# Workflows must live at `.github/workflows/` in the repo that GitHub builds (usually DLT-SaaS root).
+
+name: Deploy frontend (FTP)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-ftp-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 🔨 Install and build (Vite)
+        run: |
+          npm install
+          npm run build
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+          npm_config_fetch_timeout: 60000
+          npm_config_fetch_retry_mintimeout: 20000
+          npm_config_fetch_retry_maxtimeout: 120000
+
+      - name: 📋 Build fingerprint (verify CI output)
+        run: |
+          test -f dist/index.html || (echo "Build failed: dist/index.html not found" && exit 1)
+          test -d dist/assets || (echo "Build failed: dist/assets not found" && exit 1)
+          echo "✅ Build verification passed"
+          echo "dist/index.html bytes: $(wc -c < dist/index.html)"
+          echo "git SHA: ${{ github.sha }}"
+
+          - name: 📤 Upload to hosting (FTP)
+          uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+          with:
+            server: ${{ secrets.FTP_SERVER }}
+            username: ${{ secrets.FTP_USERNAME }}
+            password: ${{ secrets.FTP_PASSWORD }}
+            protocol: ftps
+            local-dir: ./dist/
+            dangerous-clean-slate: false
+            exclude: |
+              **/bootcamp/**
+              **/_next/**
+              **/dev-studio/**
+            log-level: verbose

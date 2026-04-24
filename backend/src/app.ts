@@ -6,7 +6,7 @@ import contactRoutes from './routes/contactRoutes';
 
 const app = express();
 
-const allowedOrigins = ['http://localhost:5173'];
+const allowedOrigins = ['http://localhost:5173', 'https://dlthub.org'];
 if (process.env.FRONTEND_URL) {
   allowedOrigins.push(process.env.FRONTEND_URL);
 }
@@ -25,7 +25,7 @@ app.use('/api/contact', contactRoutes);
 
 app.get('/api/health', async (req, res) => {
   const dbState = mongoose.connection.readyState;
-  const isDbConnected = dbState === 1; 
+  const isDbConnected = dbState === 1;
 
   if (isDbConnected) {
     res.status(200).json({

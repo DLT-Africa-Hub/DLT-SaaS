@@ -68,7 +68,7 @@ const Herosection = ({openModal}:MeetProps) => {
       </div>
       <div className="absolute bottom-0 flex w-full h-[50%] md:h-auto justify-center opacity-20 rounded-b-[20px] animate-earth-orbit">
         <div className="absolute  h-full w-full rounded-b-[20px] bg-linear-to-t from-green-800/50 to-transparent" />
-        <img loading='lazy' src={earthImage} className="w-[1360px] object-cover rounded-b-[20px]" alt="" aria-hidden />
+        <img loading='lazy' src={earthImage} className="w-[1360px] max-w-full object-cover rounded-b-[20px]" alt="" aria-hidden />
       </div>
     </ScrollReveal>
   );

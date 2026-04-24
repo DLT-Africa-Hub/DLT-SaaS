@@ -33,7 +33,7 @@ const Footer = ({openModal}:MeetProps) => {
     <footer className=" py-[86px] md:py-0 md:h-screen bg-linear-to-t from-[#34de006a] flex items-center justify-center flex-col px-5 md:px-[70px]  gap-[72px]  to-platform font-sf">
       <div className="relative hidden md:block w-[80%] h-[485px] bg-[#196106] pt-[100px] px-[61px]  rounded-[50px] overflow-hidden ">
 
-        <div className="flex flex-col items-start gap-[30px] z-50">
+        <div className="flex flex-col items-start gap-[30px] z-10 relative">
             <div className="flex flex-col items-start gap-[20px]">
                 <p className="font-meduim text-[56px] text-[#FAFAFAFA]">{footerData.cta.title}</p>
                 <p className="font-light text-[18px] text-[#FAFAFABF] w-[70%]">{footerData.cta.subtitle}</p>
@@ -44,8 +44,8 @@ const Footer = ({openModal}:MeetProps) => {
 
         <div className="absolute w-[426px] h-[938px] bg-[#FFFFFF66] top-[-374px] left-[-269px]  rotate-67 blur-3xl"/>
         <div className="absolute w-[426px] h-[938px] bg-[#ffffff86] top-[-242px] left-[1250px]  rotate-22 blur-3xl"/>
-        <img loading="lazy" src={footerData.cta.image} alt="dlt" className="absolute bottom-[-100px] right-[-50px] w-[571px] h-[571px]" />
-        <svg className="absolute inset-0 w-full h-full opacity-20 z-100 pointer-events-none rounded-[50px]">
+        <img loading="lazy" src={footerData.cta.image} alt="dlt" className="absolute bottom-[-100px] right-[-50px] w-[571px] h-[571px] z-0" />
+        <svg className="absolute inset-0 w-full h-full opacity-20 z-[100] pointer-events-none rounded-[50px]">
           <filter id="noise">
             <feTurbulence
               type="fractalNoise"

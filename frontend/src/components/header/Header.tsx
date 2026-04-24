@@ -13,6 +13,8 @@ const Header = ({ onContactClick }: HeaderProps) => {
   const lastScrollY = useRef(0);
 
   useEffect(() => {
+    lastScrollY.current = window.scrollY;
+
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
@@ -43,11 +45,11 @@ const Header = ({ onContactClick }: HeaderProps) => {
 
   return (
     <header
-      className={`fixed bg-platform md:bg-transparent w-full px-5 pb-[10px] pt-[37px] text-body md:px-[70px] md:pb-0 md:pt-[40px] z-200 transition-transform duration-300 ${
+      className={`fixed bg-platform md:bg-transparent w-full px-5 pb-[10px] pt-[37px] text-body md:px-[70px] md:pb-0 md:pt-[40px] z-[200] transition-transform duration-300 ${
         visible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="relative z-210 flex items-center justify-between">
+      <div className="relative z-[210] flex items-center justify-between">
         <div className="flex items-center gap-3 md:gap-4">
           <img src={headerData.logo.src} alt={headerData.logo.alt} className="h-8 w-auto md:h-10 shrink-0" />
           <span className="hidden lg:block max-w-[220px] text-left text-[11px] font-light leading-snug text-[#FAFAFABF]">
@@ -99,7 +101,7 @@ const Header = ({ onContactClick }: HeaderProps) => {
         {isOpen && (
           <motion.div
             id="mobile-nav-overlay"
-            className="fixed inset-0 z-199 flex min-h-dvh md:hidden flex-col bg-platform font-sf"
+            className="fixed inset-0 z-[199] flex min-h-dvh md:hidden flex-col bg-platform font-sf"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

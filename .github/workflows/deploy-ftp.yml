@@ -11,6 +11,9 @@ name: Deploy frontend (FTP)
 on:
   push:
     branches: [main]
+    paths:
+      - "frontend/**"
+      - ".github/workflows/deploy-ftp.yml"
   workflow_dispatch:
 
 concurrency:

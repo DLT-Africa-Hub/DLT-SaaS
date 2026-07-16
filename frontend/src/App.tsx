@@ -5,7 +5,6 @@ import Herosection from './components/heroSection/Herosection';
 import MeetModal from './components/meetModal/MeetModal';
 import Pricing from './components/pricing/Pricing';
 import Principles from './components/principlesSection/Principles';
-import Team from './components/team/Team';
 import Testimonial from './components/testimonials/Testimonial';
 import { useState } from "react";
 import ContactForm from './contactForm/ContactForm';
@@ -25,7 +24,6 @@ export default function App() {
       {/* Hero Section */}
      <Herosection openModal={setIsMeetOpen}/>
      <Principles/>
-     <Team />
      <Expertise/>
      <Pricing/>
      <Testimonial/>

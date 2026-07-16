@@ -97,6 +97,12 @@
   animation: page-fade 600ms ease-out;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  min-width: 0;
+}
+
 @utility animate-soft-pulse {
   animation: soft-pulse 4s ease-in-out infinite;
 }

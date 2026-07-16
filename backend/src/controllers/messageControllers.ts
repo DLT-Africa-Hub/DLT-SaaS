@@ -1,6 +1,8 @@
 import { Request, Response } from 'express';
 import asyncHandler from 'express-async-handler';
 import Contact from '../models/messageModel';
+import { sendEmail } from '../services/email.service';
+import { welcomeEmail } from '../utils/emailTemplates';
 
 // @desc    Submit contact form
 export const submitContact = asyncHandler(
@@ -79,3 +81,29 @@ export const deleteMessage = asyncHandler(
     });
   },
 );
+
+export const sendWelcomeEmail = async (req: Request, res: Response) => {
+  try {
+    const { email, name } = req.body;
+
+    const html = welcomeEmail(name);
+
+    const data = await sendEmail({
+      to: email,
+      subject: 'Welcome!',
+      html,
+    });
+
+    res.status(200).json({
+      success: true,
+      data,
+    });
+  } catch (error: unknown) {
+    const message =
+      error instanceof Error ? error.message : 'Unknown error occurred';
+    res.status(500).json({
+      success: false,
+      message,
+    });
+  }
+};

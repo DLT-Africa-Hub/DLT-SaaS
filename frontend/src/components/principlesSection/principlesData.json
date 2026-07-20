@@ -7,32 +7,38 @@
     {
       "title": "Keep it simple",
       "text": "Clear systems are easier for your users to adopt, your team to run, and us to build on later.",
-      "color": "green"
+      "color": "green",
+      "icon": "Minimize2"
     },
     {
       "title": "Build for reliability",
       "text": "We design for production from day one. That means real architecture decisions, testing, and monitoring, not just a working demo.",
-      "color": "brown"
+      "color": "brown",
+      "icon": "ShieldCheck"
     },
     {
       "title": "Solve real problems",
       "text": "Every feature has to tie back to something a user or the business actually needs. If we can't name the reason, we don't build it.",
-      "color": "green"
+      "color": "green",
+      "icon": "Target"
     },
     {
       "title": "Think long term",
       "text": "We build things you can grow into, not things you'll rebuild in six months.",
-      "color": "brown"
+      "color": "brown",
+      "icon": "TrendingUp"
     },
     {
       "title": "Ship with discipline",
       "text": "Clear milestones, regular demos, and scope written down so you always know what's shipping next and why.",
-      "color": "green"
+      "color": "green",
+      "icon": "Rocket"
     },
     {
       "title": "Own the result",
       "text": "We hand over real documentation and stick around after launch, because a product that ships is not the same as a product that works.",
-      "color": "brown"
+      "color": "brown",
+      "icon": "BadgeCheck"
     }
   ]
 }

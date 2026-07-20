@@ -2,31 +2,31 @@
   "header": {
     "badgeText": "What we build",
     "title": "Custom software and SaaS-style products for real operations",
-    "subtitle": "We run our own products in production, not just client projects. That means we've dealt with uptime, permissions, billing, and admin headaches firsthand, not just in theory."
+    "subtitle": "We run our own products in production, not just client projects. That means we've fixed our own broken billing flow, our own permission bugs, our own 2am uptime alerts, before we ever touched yours."
   },
   "illustration": "rectangle.png",
   "items": [
     {
       "title": "SaaS & customer-facing products",
-      "text": "Subscription apps, portals, and multi-tenant systems, with the auth, roles, and admin tools they actually need.",
+      "text": "Subscription apps and multi-tenant systems, with auth, roles, and billing built to hold up at scale.",
       "icon": "RiTerminalBoxLine",
       "strokeWidth": 0
     },
     {
       "title": "Business platforms",
-      "text": "Internal and external platforms built around how your team actually works: approvals, roles, permissions.",
+      "text": "Internal tools built around how approvals actually happen: who signs off, who's notified, who's blocked.",
       "icon": "MdOutlineTerminal",
       "strokeWidth": 0
     },
     {
       "title": "Dashboards & data tools",
-      "text": "One reliable view of the business instead of ten spreadsheets, so decisions take minutes, not meetings.",
+      "text": "One live view of the business, so no one's asking the WhatsApp group for last week's numbers.",
       "icon": "GoGitMerge",
       "strokeWidth": 1.3
     },
     {
       "title": "Integrations & automation",
-      "text": "Integrations that don't break, and automation that cuts out manual work, errors, and the 'wait, who changed this?' Slack threads.",
+      "text": "Stripe, Slack, WhatsApp, your CRM, wired together so nothing breaks quietly at midnight.",
       "icon": "CiShare2",
       "strokeWidth": 1.4
     }

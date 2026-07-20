@@ -1,44 +1,43 @@
 {
   "badgeText": "Principles",
   "title": "How we build",
-
   "subtitle": "Six principles that guide every product, ours and yours. We hold client work to the same standard we hold our own SaaS to.",
   "cards": [
     {
-      "title": "Keep it simple",
+      "title": "Simple wins, always",
       "text": "Clear systems are easier for your users to adopt, your team to run, and us to build on later.",
       "color": "green",
       "icon": "Minimize2"
     },
     {
-      "title": "Build for reliability",
+      "title": "Boring on purpose",
       "text": "We design for production from day one. That means real architecture decisions, testing, and monitoring, not just a working demo.",
       "color": "brown",
       "icon": "ShieldCheck"
     },
     {
-      "title": "Solve real problems",
+      "title": "No busywork",
       "text": "Every feature has to tie back to something a user or the business actually needs. If we can't name the reason, we don't build it.",
       "color": "green",
       "icon": "Target"
     },
     {
-      "title": "Think long term",
+      "title": "Build to outgrow, not to redo",
       "text": "We build things you can grow into, not things you'll rebuild in six months.",
       "color": "brown",
       "icon": "TrendingUp"
     },
     {
-      "title": "Ship with discipline",
+      "title": "Say what's next, and why",
       "text": "Clear milestones, regular demos, and scope written down so you always know what's shipping next and why.",
       "color": "green",
-      "icon": "Rocket"
+      "icon": "Milestone"
     },
     {
-      "title": "Own the result",
+      "title": "We don't disappear after launch",
       "text": "We hand over real documentation and stick around after launch, because a product that ships is not the same as a product that works.",
       "color": "brown",
-      "icon": "BadgeCheck"
+      "icon": "LifeBuoy"
     }
   ]
 }

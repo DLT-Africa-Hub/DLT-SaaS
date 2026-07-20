@@ -1,5 +1,7 @@
 import {
   BadgeCheck,
+  LifeBuoy,
+  Milestone,
   Minimize2,
   Rocket,
   ShieldCheck,
@@ -7,6 +9,8 @@ import {
   TrendingUp,
   type LucideIcon,
 } from "lucide-react";
+
+
 
 import { ScrollReveal } from "../common/ScrollReveal";
 import { SectionHeader } from "../ui/SectionHeader";
@@ -19,6 +23,8 @@ const ICONS: Record<string, LucideIcon> = {
   TrendingUp,
   Rocket,
   BadgeCheck,
+  LifeBuoy,
+  Milestone,
 };
 
 const Principles = () => {

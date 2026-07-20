@@ -8,7 +8,7 @@
   "plans": [
     {
       "title": "Discovery & roadmap",
-      "lead": "We align on goals, users, and constraints before committing any production effort.",
+      "lead": "Most projects fail before a line of code gets written. We spend real time here so yours doesn't.",
       "bullets": [
         "Structured workshops and requirements capture",
         "Technical options and architecture direction",
@@ -18,7 +18,7 @@
     },
     {
       "title": "Build & launch",
-      "lead": "Full product delivery, from agreed scope through to production release.",
+      "lead": "We'd rather show you something real every two weeks than promise you everything at the end.",
       "bullets": [
         "Iterative milestones with demoable increments",
         "QA, documentation, and deployment support",
@@ -28,7 +28,7 @@
     },
     {
       "title": "Iterate & support",
-      "lead": "Ongoing product and engineering capacity once you've launched.",
+      "lead": "Launch is the start of the real work, not the finish line. We stay close enough to catch what breaks.",
       "bullets": [
         "Roadmap iterations, new modules, and refinements",
         "Bug triage and reliability improvements",

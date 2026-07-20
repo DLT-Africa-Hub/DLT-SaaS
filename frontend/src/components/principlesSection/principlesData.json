@@ -1,43 +1,38 @@
 {
   "badgeText": "Principles",
   "title": "How we build",
-  "subtitle": "Six principles on every product we ship — our SaaS and yours.",
+
+  "subtitle": "Six principles that guide every product, ours and yours. We hold client work to the same standard we hold our own SaaS to.",
   "cards": [
     {
       "title": "Keep it simple",
-      "text": "Systems people understand, teams can run, and we can extend without rework.",
-      "color": "green",
-      "icon": "Minimize2"
+      "text": "Clear systems are easier for your users to adopt, your team to run, and us to build on later.",
+      "color": "green"
     },
     {
       "title": "Build for reliability",
-      "text": "Production-ready from day one — architecture, tests, releases, and monitoring.",
-      "color": "brown",
-      "icon": "ShieldCheck"
+      "text": "We design for production from day one. That means real architecture decisions, testing, and monitoring, not just a working demo.",
+      "color": "brown"
     },
     {
       "title": "Solve real problems",
-      "text": "Every feature serves a clear business or user outcome. Nothing for the sake of shipping.",
-      "color": "green",
-      "icon": "Target"
+      "text": "Every feature has to tie back to something a user or the business actually needs. If we can't name the reason, we don't build it.",
+      "color": "green"
     },
     {
       "title": "Think long term",
-      "text": "Patterns you can grow into — not throwaway demos that expire in six months.",
-      "color": "brown",
-      "icon": "TrendingUp"
+      "text": "We build things you can grow into, not things you'll rebuild in six months.",
+      "color": "brown"
     },
     {
       "title": "Ship with discipline",
-      "text": "Clear milestones, demos, and scope so you always know what's next and why.",
-      "color": "green",
-      "icon": "Rocket"
+      "text": "Clear milestones, regular demos, and scope written down so you always know what's shipping next and why.",
+      "color": "green"
     },
     {
       "title": "Own the result",
-      "text": "Docs, handover, and support after launch — so the product keeps delivering.",
-      "color": "brown",
-      "icon": "BadgeCheck"
+      "text": "We hand over real documentation and stick around after launch, because a product that ships is not the same as a product that works.",
+      "color": "brown"
     }
   ]
 }

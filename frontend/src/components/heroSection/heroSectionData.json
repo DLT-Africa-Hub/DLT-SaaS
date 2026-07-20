@@ -1,8 +1,8 @@
 {
-  "heading": "Software products built for your business, not slide decks.",
-  "subheading": "DLTHub is a product studio: we design and ship web products, platforms, and integrations for teams that need to go to production. The same discipline we use on our own SaaS shows up in every client engagement.",
-  "ctaText": "Book a discovery call",
-  "viewMoreText": "See what we build",
+  "heading": "We build software your team actually uses.",
+  "subheading": "DLTHub is a product studio. We design and build web apps, platforms, and integrations for teams that need something in production, not in a pitch deck. We run our own SaaS the same way we run client work: ship it, watch it break, fix it, ship again.",
+  "ctaText": "Book a call",
+  "viewMoreText": "See our work",
   "viewMoreHref": "#expertise",
   "earthImage": "earth.png",
   "beams": [
@@ -16,8 +16,8 @@
     { "height": "10%" }
   ],
   "stats": [
-    { "title": "products", "number": 35, "suffix": "+", "text": "Products shipped to production" },
-    { "title": "clients", "number": 25, "suffix": "+", "text": "Client engagements" },
-    { "title": "regions", "number": 12, "suffix": "+", "text": "Markets & time zones served" }
+    { "title": "products", "number": 35, "suffix": "+", "text": "Shipped to production, not stuck in staging" },
+    { "title": "clients", "number": 25, "suffix": "+", "text": "Teams we've built for" },
+    { "title": "regions", "number": 12, "suffix": "+", "text": "Time zones we've shipped across" }
   ]
 }

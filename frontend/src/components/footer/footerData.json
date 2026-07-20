@@ -1,8 +1,8 @@
 {
   "cta": {
-"title": "Plan your next product with DLTHub",
-"subtitle": "About 30 minutes to align on goals, constraints, and next steps, then we follow up with a clear path to scope and delivery.",
-    "buttonText": "Book a discovery call",
+    "title": "Let's plan your next product",
+    "subtitle": "30 minutes to talk through goals, constraints, and next steps. You'll walk away with a clear path to scope and delivery.",
+    "buttonText": "Book a call",
     "image": "dlt.png"
   },
   "brand": {
@@ -18,7 +18,7 @@
   ],
   "contact": {
     "title": "Contact",
-    "location": " 21 Hever Lane, Stone Greenhithe DA9 9TQ",
+    "location": "21 Hever Lane, Stone Greenhithe DA9 9TQ",
     "phone": {
       "display": "(44) 7957 120395",
       "href": "tel:+447957120395"

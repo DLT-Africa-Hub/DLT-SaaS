@@ -2,23 +2,23 @@
 import { ScrollReveal } from '../common/ScrollReveal'
 import { SectionHeader } from '../ui/SectionHeader'
 import { SlGlobeAlt } from "react-icons/sl";
-import pricingData from "./pricingData.json"
+import engagementsData from "./engagements.json"
 
-const Pricing = () => {
+const Engagements = () => {
   const dashes = Array.from({ length: 20 });
 
   return (
     <ScrollReveal id="pricing" className='scroll-mt-[100px] pt-[86px] md:pt-[150px] pb-[50px]  flex flex-col items-center gap-[85px] font-sf' direction="up">
           <SectionHeader
-        badgeText={pricingData.header.badgeText}
-        title={pricingData.header.title}
-        subtitle={pricingData.header.subtitle}
+        badgeText={engagementsData.header.badgeText}
+        title={engagementsData.header.title}
+        subtitle={engagementsData.header.subtitle}
         className='w-full px-5  md:w-[673px]'
         align='center'
       />
 
       <div className='flex flex-col md:flex-row items-stretch gap-[35px] md:min-h-[666px] px-5'>
-            {pricingData.plans.map((plan)=>(
+            {engagementsData.plans.map((plan)=>(
                 <div key={plan.title} className='h-full w-full md:w-[423px] px-[30px] py-[50px] border border-[#1C780080] rounded-[30px] flex flex-col items-start gap-10 justify-between'>
 
                     <div className='flex flex-col items-center gap-[46px] w-full '>
@@ -57,7 +57,7 @@ const Pricing = () => {
       </div>
 
       <p className="px-5 text-center text-[14px] md:text-[16px] font-light text-[#FAFAFABF] max-w-[720px]">
-        {pricingData.disclaimer}
+        {engagementsData.disclaimer}
       </p>
 
 
@@ -65,4 +65,4 @@ const Pricing = () => {
   )
 }
 
-export default Pricing
+export default Engagements

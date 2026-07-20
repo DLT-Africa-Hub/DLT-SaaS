@@ -2,33 +2,33 @@
   "header": {
     "badgeText": "What we build",
     "title": "Custom software and SaaS-style products for real operations",
-"subtitle": "We operate products in production ourselves, not only client projects, so we understand uptime, permissions, billing, and admin workflows end to end."
+    "subtitle": "We run our own products in production, not just client projects. That means we've dealt with uptime, permissions, billing, and admin headaches firsthand, not just in theory."
   },
   "illustration": "rectangle.png",
-"items": [
-  {
-    "title": "SaaS & customer-facing products",
-    "text": "Subscription apps, portals, and multi-tenant systems with auth, roles, and essential admin tools.",
-    "icon": "RiTerminalBoxLine",
-    "strokeWidth": 0
-  },
-  {
-    "title": "Business platforms",
-    "text": "Internal and external platforms built around real workflows, approvals, and role-based access.",
-    "icon": "MdOutlineTerminal",
-    "strokeWidth": 0
-  },
-  {
-    "title": "Dashboards & data tools",
-    "text": "Dashboards that speed up decisions with fewer spreadsheets and one reliable view of the business.",
-    "icon": "GoGitMerge",
-    "strokeWidth": 1.3
-  },
-  {
-    "title": "Integrations & automation",
-    "text": "Stable integrations and automation between tools, reducing manual work, errors, and improving audit trails.",
-    "icon": "CiShare2",
-    "strokeWidth": 1.4
-  }
-]
+  "items": [
+    {
+      "title": "SaaS & customer-facing products",
+      "text": "Subscription apps, portals, and multi-tenant systems, with the auth, roles, and admin tools they actually need.",
+      "icon": "RiTerminalBoxLine",
+      "strokeWidth": 0
+    },
+    {
+      "title": "Business platforms",
+      "text": "Internal and external platforms built around how your team actually works: approvals, roles, permissions.",
+      "icon": "MdOutlineTerminal",
+      "strokeWidth": 0
+    },
+    {
+      "title": "Dashboards & data tools",
+      "text": "One reliable view of the business instead of ten spreadsheets, so decisions take minutes, not meetings.",
+      "icon": "GoGitMerge",
+      "strokeWidth": 1.3
+    },
+    {
+      "title": "Integrations & automation",
+      "text": "Integrations that don't break, and automation that cuts out manual work, errors, and the 'wait, who changed this?' Slack threads.",
+      "icon": "CiShare2",
+      "strokeWidth": 1.4
+    }
+  ]
 }

@@ -3,7 +3,7 @@ import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Herosection from './components/heroSection/Herosection';
 import MeetModal from './components/meetModal/MeetModal';
-import Pricing from './components/pricing/Pricing';
+import Engagements from './components/engagement/Engagements';
 import Principles from './components/principlesSection/Principles';
 import Testimonial from './components/testimonials/Testimonial';
 import { useState } from "react";
@@ -25,7 +25,7 @@ export default function App() {
      <Herosection openModal={setIsMeetOpen}/>
      <Principles/>
      <Expertise/>
-     <Pricing/>
+     <Engagements/>
      <Testimonial/>
      <Footer openModal={setIsMeetOpen}/>
      <MeetModal  isOpen={isMeetOpen} onClose={() => setIsMeetOpen(false)}/>

@@ -1,0 +1,40 @@
+{
+  "header": {
+    "badgeText": "Engagements",
+    "title": "How we work with you",
+    "subtitle": "Straightforward engagement models. We settle on final pricing and timelines after technical discovery and agreed scope, not before."
+  },
+  "disclaimer": "Every quote is tailored once we understand your product, users, and constraints. No surprise invoices mid-flight.",
+  "plans": [
+    {
+      "title": "Discovery & roadmap",
+      "lead": "We align on goals, users, and constraints before committing any production effort.",
+      "bullets": [
+        "Structured workshops and requirements capture",
+        "Technical options and architecture direction",
+        "Milestone plan and written proposal"
+      ],
+      "footnote": "Usually a fixed discovery fee, credited toward the build if you move forward."
+    },
+    {
+      "title": "Build & launch",
+      "lead": "Full product delivery, from agreed scope through to production release.",
+      "bullets": [
+        "Iterative milestones with demoable increments",
+        "QA, documentation, and deployment support",
+        "Handover so your team can run the system without us"
+      ],
+      "footnote": "Project-based or phased contracts. Any scope changes get agreed in writing, not assumed."
+    },
+    {
+      "title": "Iterate & support",
+      "lead": "Ongoing product and engineering capacity once you've launched.",
+      "bullets": [
+        "Roadmap iterations, new modules, and refinements",
+        "Bug triage and reliability improvements",
+        "Optional retainer for monthly capacity"
+      ],
+      "footnote": "Retainers come with a clear definition of capacity and response times, so there's no guessing."
+    }
+  ]
+}

@@ -2,6 +2,7 @@ import Expertise from './components/expertise/Expertise';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Herosection from './components/heroSection/Herosection';
+import TechStack from './components/techStack/TechStack';
 import MeetModal from './components/meetModal/MeetModal';
 import Engagements from './components/engagement/Engagements';
 import Principles from './components/principlesSection/Principles';
@@ -19,10 +20,14 @@ export default function App() {
   return (
     <div className="relative min-h-screen bg-platform text-body overflow-x-hidden animate-page-fade">
        
-      <Header onContactClick={() => setIsContactOpen(true)} />
+      <Header />
 
       {/* Hero Section */}
-     <Herosection openModal={setIsMeetOpen}/>
+     <Herosection
+       openModal={setIsMeetOpen}
+       openContact={() => setIsContactOpen(true)}
+     />
+     <TechStack/>
      <Principles/>
      <Expertise/>
      <Engagements/>

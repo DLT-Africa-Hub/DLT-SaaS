@@ -3,6 +3,7 @@
   "subheading": "A product studio for founders, operators, and engineering teams who need something running in production, not sitting in a pitch deck. We hold client work to the same standard we hold our own SaaS to.",
   "statusText": "Currently taking on new projects",
   "ctaText": "Book a Call",
+  "contactCtaText": "Contact us",
   "secondaryCtaText": "See our work",
   "viewMoreText": "See what we build",
   "viewMoreHref": "#expertise",
@@ -18,8 +19,26 @@
     { "height": "10%" }
   ],
   "stats": [
-    { "title": "products", "number": 35, "suffix": "+", "text": "Shipped to production, not stuck in staging" },
-    { "title": "clients", "number": 25, "suffix": "+", "text": "Teams we've built for" },
-    { "title": "regions", "number": 12, "suffix": "+", "text": "Time zones we've shipped across" }
+    {
+      "title": "products",
+      "number": 35,
+      "suffix": "+",
+      "shortText": "Products shipped",
+      "text": "Shipped to production, not stuck in staging"
+    },
+    {
+      "title": "clients",
+      "number": 25,
+      "suffix": "+",
+      "shortText": "Client teams",
+      "text": "Teams we've built for"
+    },
+    {
+      "title": "regions",
+      "number": 12,
+      "suffix": "+",
+      "shortText": "Time zones",
+      "text": "Time zones we've shipped across"
+    }
   ]
 }

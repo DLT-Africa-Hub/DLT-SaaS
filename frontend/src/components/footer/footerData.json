@@ -10,11 +10,22 @@
     "logoAlt": "DLTHub"
   },
   "socials": [
-    { "icon": "FaFacebook", "link": "https://dlthub.org" },
-    { "icon": "FaInstagram", "link": "https://dlthub.org" },
-    { "icon": "FaLinkedin", "link": "https://dlthub.org" },
-    { "icon": "FaXTwitter", "link": "https://dlthub.org" },
-    { "icon": "FaGithub", "link": "https://dlthub.org" }
+    {
+      "icon": "FaInstagram",
+      "link": "https://www.instagram.com/dlthub_/",
+      "label": "Instagram"
+    },
+    {
+      "icon": "FaLinkedin",
+      "link": "https://www.linkedin.com/company/dlthub/",
+      "label": "LinkedIn"
+    },
+    { "icon": "FaXTwitter", "link": "https://x.com/dlt_africa", "label": "X" },
+    {
+      "icon": "FaGithub",
+      "link": "https://github.com/DLT-Africa-Hub",
+      "label": "GitHub"
+    }
   ],
   "contact": {
     "title": "Contact",

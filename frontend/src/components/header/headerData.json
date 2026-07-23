@@ -2,15 +2,5 @@
   "logo": {
     "src": "/logo.png",
     "alt": "DLTHub"
-  },
-  "tagline": "Innovating through technology...",
-  "navigation": [
-    { "label": "What we build", "href": "#expertise" },
-    { "label": "Team", "href": "#team" },
-    { "label": "Pricing", "href": "#pricing" }
-  ],
-  "actions": {
-    "contactButtonText": "Contact us"
-  },
-  "mobileNavHint": "Response within two business days"
+  }
 }
